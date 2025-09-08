@@ -19,6 +19,6 @@ public class DamiennesBitsnBobs implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Adding random junk and riches!");
+		LOGGER.info("Adding random junk and trinkets!");
 	}
 }

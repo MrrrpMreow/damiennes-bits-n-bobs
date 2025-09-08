@@ -1,5 +1,6 @@
 package net.gloobert.bitsnbobs;
 
+import net.minecraft.block.CropBlock;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;

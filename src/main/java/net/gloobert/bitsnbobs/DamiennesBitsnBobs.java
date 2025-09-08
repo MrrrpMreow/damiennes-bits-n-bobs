@@ -5,6 +5,9 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import net.gloobert.bitsnbobs.BlockInitializer;
+import net.gloobert.bitsnbobs.ItemInitializer;
+
 public class DamiennesBitsnBobs implements ModInitializer {
 	public static final String MOD_ID = "damiennes-bits-n-bobs";
 
@@ -20,5 +23,7 @@ public class DamiennesBitsnBobs implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Adding random junk and trinkets!");
+		BlockInitializer.initialize();
+		ItemInitializer.initialize();
 	}
 }

@@ -1,4 +1,4 @@
-package net.gloobert.bitsnbobs;
+package net.gloobert.bitsnbobs.blocks;
 
 import net.minecraft.block.CropBlock;
 import net.minecraft.block.AbstractBlock;

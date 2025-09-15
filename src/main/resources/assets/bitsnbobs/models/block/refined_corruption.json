@@ -1,9 +1,7 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "bitsnbobs:block/refined_corruption",
-    "north": "bitsnbobs:block/inverse_refined_corruption",
-    "south": "bitsnbobs:block/inverse_refined_corruption"
+    "all": "bitsnbobs:block/refined_corruption"
   }
 }
 

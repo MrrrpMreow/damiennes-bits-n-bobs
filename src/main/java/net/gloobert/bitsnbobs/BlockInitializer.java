@@ -18,7 +18,7 @@ public class BlockInitializer {
 
     public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.create()
         .strength(2.0f)
-        .soundGroup(BlockSoundGroup.NETHER_BRICK)
+        .soundGroup(BlockSoundGroup.NETHER_BRICKS)
     ), true);
     public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new StairsBlock(BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(BLUE_NETHER_BRICKS)), true);

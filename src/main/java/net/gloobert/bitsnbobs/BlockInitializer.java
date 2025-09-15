@@ -2,6 +2,8 @@ package net.gloobert.bitsnbobs;
 
 import net.minecraft.block.CropBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.sound.BlockSoundGroup;
@@ -16,6 +18,8 @@ public class BlockInitializer {
 
     public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.create().strength(4.0f)), true);
     public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
+    public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
+    public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new StairsBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block POLISHED_TILES = register("polished_tiles", new Block(Block.Settings.create().strength(4.0f)), true);
     public static final Block PURIFIED_CORRUPTION = register("purified_corruption", new Block(Block.Settings.create().strength(4.0f)), true);
     public static final Block REFINED_CORRUPTION = register("refined_corruption", new Block(Block.Settings.create().strength(4.0f)), true);

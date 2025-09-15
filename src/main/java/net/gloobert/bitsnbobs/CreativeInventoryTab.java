@@ -22,6 +22,8 @@ public class CreativeInventoryTab {
             // Warped Wart and related items
             entries.add(ItemInitializer.WARPED_WART);
             entries.add(BlockInitializer.BLUE_NETHER_BRICKS);
+            entries.add(BlockInitializer.BLUE_NETHER_BRICK_SLABS);
+            entries.add(BlockInitializer.BLUE_NETHER_BRICK_STAIRS);
             entries.add(BlockInitializer.BLUE_NETHER_BRICK_WALL);
             // Building Blocks
             entries.add(BlockInitializer.POLISHED_TILES);

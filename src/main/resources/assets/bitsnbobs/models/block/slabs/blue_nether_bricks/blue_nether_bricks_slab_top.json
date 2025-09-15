@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "bitsnbobs:blue_nether_bricks",
+    "side": "bitsnbobs:blue_nether_bricks",
+    "top": "bitsnbobs:blue_nether_bricks"
+  }
+}

@@ -27,6 +27,8 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.BLUE_NETHER_BRICK_WALL);
             // Building Blocks
             entries.add(BlockInitializer.POLISHED_TILES);
+            entries.add(BlockInitializer.POLISHED_TILE_SLAB);
+            entries.add(BlockInitializer.POLISHED_TILE_STAIRS);
             // Corruption
             entries.add(BlockInitializer.PURIFIED_CORRUPTION);
             entries.add(BlockInitializer.REFINED_CORRUPTION);

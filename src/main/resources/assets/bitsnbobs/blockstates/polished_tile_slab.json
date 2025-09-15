@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bitsnbobs:block/slabs/polished_tile/slab"
+    },
+    "type=double": {
+      "model": "bitsnbobs:block/polished_tiles"
+    },
+    "type=top": {
+      "model": "bitsnbobs:block/slabs/polished_tile/slab_top"
+    }
+  }
+}

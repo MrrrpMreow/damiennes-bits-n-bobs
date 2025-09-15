@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "bitsnbobs:block/polished_tiles",
+    "north": "bitsnbobs:block/inverse_polished_tiles",
+    "south": "bitsnbobs:block/inverse_polished_tiles"
+  }
+}

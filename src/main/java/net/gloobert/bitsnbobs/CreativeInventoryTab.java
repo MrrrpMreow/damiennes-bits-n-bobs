@@ -14,7 +14,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.gloobert.bitsnbobs.BlockInitializer;
 import net.gloobert.bitsnbobs.ItemInitializer;
 
-public class GlowstoneCreativeGUI {
+public class CreativeInventoryTab {
         public static final ItemGroup GLOWSTONE_EXTENDED = Registry.register(Registries.ITEM_GROUP, new Identifier("bitsnbobs", "bitsnbobs_creative"), FabricItemGroup.builder()
         .icon(() -> new ItemStack(ItemInitializer.WARPED_WART))
         .displayName(Text.translatable("itemGroup.glowstone-extended.glowstone_extended_creative"))

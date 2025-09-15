@@ -22,7 +22,11 @@ public class CreativeInventoryTab {
             // Warped Wart and related items
             entries.add(ItemInitializer.WARPED_WART);
             entries.add(BlockInitializer.BLUE_NETHER_BRICKS);
+            // Building Blocks
             entries.add(BlockInitializer.POLISHED_TILES);
+            // Corruption
+            entries.add(BlockInitializer.PURIFIED_CORRUPTION);
+            entries.add(BlockInitializer.REFINED_CORRUPTION);
 
         })
         .build());

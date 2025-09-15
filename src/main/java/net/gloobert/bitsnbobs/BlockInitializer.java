@@ -13,7 +13,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 
 public class BlockInitializer {
 
-    public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", Block.Settings.create().strength(4.0f), true);
+    public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.create().strength(4.0f)), true);
 
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);

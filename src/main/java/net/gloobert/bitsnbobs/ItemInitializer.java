@@ -9,7 +9,7 @@ import net.gloobert.bitsnbobs.BlockInitializer;
 public class ItemInitializer {
     private ItemInitializer() {}
  
-    public static final Item WARPED_WART_ITEM = register("warped_wart", new Item(Item.Settings()));
+    public static final Item WARPED_WART_ITEM = register("warped_wart", new Item(new Item.Settings()));
  
     public static <T extends Item> T register(String path, T item) {
         return Registry.register(Registries.ITEM, new Identifier("bitsnbobs", path), item);

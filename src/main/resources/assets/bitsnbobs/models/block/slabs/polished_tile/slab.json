@@ -2,7 +2,7 @@
   "parent": "minecraft:block/slab",
   "textures": {
     "top": "bitsnbobs:block/polished_tiles",
-    "sides": "bitsnbobs:block/polished_tiles",
+    "side": "bitsnbobs:block/polished_tiles",
     "bottom": "bitsnbobs:block/polished_tiles"
   }
 }

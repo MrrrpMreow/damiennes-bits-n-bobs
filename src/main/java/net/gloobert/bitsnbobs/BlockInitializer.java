@@ -22,7 +22,6 @@ public class BlockInitializer {
     }
  
     public static void initialize() {
-        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), WARPED_WART);
     }
 
 }

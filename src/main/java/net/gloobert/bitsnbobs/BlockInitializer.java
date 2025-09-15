@@ -18,14 +18,14 @@ public class BlockInitializer {
 
     public static final Block BLUE_NETHER_BRICKS = register("blue_nether_bricks", new Block(Block.Settings.create()
         .strength(2.0f)
-        .soundGroup(BlockSoundGroup.NETHER_BRICKS)
+        .sounds(BlockSoundGroup.NETHER_BRICKS)
     ), true);
     public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new StairsBlock(BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block POLISHED_TILES = register("polished_tiles", new Block(Block.Settings.create()
         .strength(4.0f)
-        .soundGroup(BlockSoundGroup.DEEPSLATE)
+        .sounds(BlockSoundGroup.DEEPSLATE)
     ), true);
     public static final Block POLISHED_TILE_STAIRS = register("polished_tile_stairs", new StairsBlock(POLISHED_TILES.getDefaultState(), Block.Settings.copy(POLISHED_TILES)), true);
     public static final Block POLISHED_TILE_SLAB = register("polished_tile_slab", new SlabBlock(Block.Settings.copy(POLISHED_TILES)), true);

@@ -9,11 +9,9 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
-import net.gloobert.bitsnbobs.blocks.WarpedWartCrop;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 
 public class BlockInitializer {
-    public static final CropBlock WARPED_WART = register("warped_wart", new WarpedWartCrop.CustomCropBlock(AbstractBlock.Settings.create().nonOpaque().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP)), false); 
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);
         // Make it easy to distinctly separate Item and Block forms of something if preferred

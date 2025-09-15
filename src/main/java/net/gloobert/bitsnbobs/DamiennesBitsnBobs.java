@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import net.gloobert.bitsnbobs.BlockInitializer;
 import net.gloobert.bitsnbobs.ItemInitializer;
+import net.gloobert.bitsnbobs.CreativeInventoryTab;
 
 public class DamiennesBitsnBobs implements ModInitializer {
 	public static final String MOD_ID = "damiennes-bits-n-bobs";
@@ -25,5 +26,6 @@ public class DamiennesBitsnBobs implements ModInitializer {
 		LOGGER.info("Adding random junk and trinkets!");
 		BlockInitializer.initialize();
 		ItemInitializer.initialize();
+		CreativeInventoryTab.initialize();
 	}
 }

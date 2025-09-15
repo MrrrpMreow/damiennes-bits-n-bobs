@@ -1,7 +1,9 @@
 {
   "parent": "minecraft:block/stairs",
   "textures": {
-    "all": "bitsnbobs:block/polished_tiles",
+    "top": "bitsnbobs:block/polished_tiles",
+    "sides": "bitsnbobs:block/polished_tiles",
+    "bottom": "bitsnbobs:block/polished_tiles",
     "north": "bitsnbobs:block/inverse_polished_tiles",
     "south": "bitsnbobs:block/inverse_polished_tiles"
   }

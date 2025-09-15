@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "bitsnbobs:block/blue_nether_bricks"
+  }
+}

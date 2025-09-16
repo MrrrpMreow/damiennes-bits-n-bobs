@@ -20,6 +20,8 @@ public class BlockInitializer {
         .strength(2.0f)
         .sounds(BlockSoundGroup.NETHER_BRICKS)
     ), true);
+    public static final Block CHISELED_BLUE_NETHER_BRICKS = register("chiseled_blue_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
+    public static final Block CHISELED_RED_NETHER_BRICKS = register("chiseled_red_nether_bricks", new Block(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block BLUE_NETHER_BRICK_SLAB = register("blue_nether_brick_slab", new SlabBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block BLUE_NETHER_BRICK_STAIRS = register("blue_nether_brick_stairs", new StairsBlock(BLUE_NETHER_BRICKS.getDefaultState(), Block.Settings.copy(BLUE_NETHER_BRICKS)), true);
     public static final Block BLUE_NETHER_BRICK_WALL = register("blue_nether_brick_wall", new WallBlock(Block.Settings.copy(BLUE_NETHER_BRICKS)), true);

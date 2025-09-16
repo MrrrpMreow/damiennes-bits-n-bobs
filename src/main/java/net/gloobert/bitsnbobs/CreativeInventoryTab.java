@@ -22,13 +22,16 @@ public class CreativeInventoryTab {
             // Warped Wart and related items
             entries.add(ItemInitializer.WARPED_WART);
             entries.add(BlockInitializer.BLUE_NETHER_BRICKS);
-            entries.add(BlockInitializer.BLUE_NETHER_BRICK_SLAB);
             entries.add(BlockInitializer.BLUE_NETHER_BRICK_STAIRS);
+            entries.add(BlockInitializer.BLUE_NETHER_BRICK_SLAB);
             entries.add(BlockInitializer.BLUE_NETHER_BRICK_WALL);
+            entries.add(BlockInitializer.CHISELED_BLUE_NETHER_BRICKS);
+            entries.add(BlockInitializer.CHISELED_RED_NETHER_BRICKS);
             // Building Blocks
             entries.add(BlockInitializer.POLISHED_TILES);
-            entries.add(BlockInitializer.POLISHED_TILE_SLAB);
             entries.add(BlockInitializer.POLISHED_TILE_STAIRS);
+            entries.add(BlockInitializer.POLISHED_TILE_SLAB);
+            entries.add(BlockInitializer.POLISHED_TILE_WALL);
             // Corruption
             entries.add(BlockInitializer.PURIFIED_CORRUPTION);
             entries.add(BlockInitializer.REFINED_CORRUPTION);

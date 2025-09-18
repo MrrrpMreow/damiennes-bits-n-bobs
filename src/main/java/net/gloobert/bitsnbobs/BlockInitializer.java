@@ -31,7 +31,7 @@ public class BlockInitializer {
         .strength(4.0f)
         .sounds(BlockSoundGroup.CALCITE)
     ), true);
-    public static final Block CHISELED_POLISHED_TILES = register("chiseled_polished_tiles", new Block(Block.Settings.copy(POLISHED_TILES)))
+    public static final Block CHISELED_POLISHED_TILES = register("chiseled_polished_tiles", new Block(Block.Settings.copy(POLISHED_TILES)));
     public static final Block POLISHED_TILE_STAIRS = register("polished_tile_stairs", new StairsBlock(POLISHED_TILES.getDefaultState(), Block.Settings.copy(POLISHED_TILES)), true);
     public static final Block POLISHED_TILE_SLAB = register("polished_tile_slab", new SlabBlock(Block.Settings.copy(POLISHED_TILES)), true);
     public static final Block POLISHED_TILE_WALL = register("polished_tile_wall", new WallBlock(Block.Settings.copy(POLISHED_TILES)), true);

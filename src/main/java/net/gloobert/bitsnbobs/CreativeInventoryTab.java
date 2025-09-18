@@ -36,7 +36,8 @@ public class CreativeInventoryTab {
             // Corruption
             entries.add(BlockInitializer.PURIFIED_CORRUPTION);
             entries.add(BlockInitializer.REFINED_CORRUPTION);
-
+            // Woven Wool
+            entries.add(BlockInitializer.WOVEN_WOOL_WHITE);
         })
         .build());
     public static void initialize() {

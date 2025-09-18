@@ -38,6 +38,20 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.REFINED_CORRUPTION);
             // Woven Wool
             entries.add(BlockInitializer.WOVEN_WOOL_WHITE);
+            entries.add(BlockInitializer.WOVEN_WOOL_LIGHT_GRAY);
+            entries.add(BlockInitializer.WOVEN_WOOL_GRAY);
+            entries.add(BlockInitializer.WOVEN_WOOL_BLACK);
+            entries.add(BlockInitializer.WOVEN_WOOL_BROWN);
+            entries.add(BlockInitializer.WOVEN_WOOL_RED);
+            entries.add(BlockInitializer.WOVEN_WOOL_ORANGE);
+            entries.add(BlockInitializer.WOVEN_WOOL_YELLOW);
+            entries.add(BlockInitializer.WOVEN_WOOL_LIME);
+            entries.add(BlockInitializer.WOVEN_WOOL_CYAN);
+            entries.add(BlockInitializer.WOVEN_WOOL_LIGHT_BLUE);
+            entries.add(BlockInitializer.WOVEN_WOOL_BLUE);
+            entries.add(BlockInitializer.WOVEN_WOOL_PURPLE);
+            entries.add(BlockInitializer.WOVEN_WOOL_MAGENTA);
+            entries.add(BlockInitializer.WOVEN_WOOL_PINK);
         })
         .build());
     public static void initialize() {

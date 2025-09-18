@@ -43,6 +43,21 @@ public class BlockInitializer {
         .strength(0.8f)
         .sounds(BlockSoundGroup.WOOL)
     ), true);
+    public static final Block WOVEN_WOOL_BLACK = register("woven_wool_black", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_BLUE = register("woven_wool_blue", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_BROWN = register("woven_wool_brown", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_CYAN = register("woven_wool_cyan", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_GRAY = register("woven_wool_gray", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_GREEN = register("woven_wool_green", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_LIGHT_BLUE = register("woven_wool_light_blue", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_LIGHT_GRAY = register("woven_wool_light_gray", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_LIME = register("woven_wool_lime", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_MAGENTA = register("woven_wool_magenta", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_ORANGE = register("woven_wool_orange", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_PINK = register("woven_wool_pink", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_PURPLE = register("woven_wool_purple", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_RED = register("woven_wool_red", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
+    public static final Block WOVEN_WOOL_YELLOW = register("woven_wool_yellow", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
 
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);

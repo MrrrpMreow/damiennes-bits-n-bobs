@@ -32,6 +32,7 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.POLISHED_TILE_STAIRS);
             entries.add(BlockInitializer.POLISHED_TILE_SLAB);
             entries.add(BlockInitializer.POLISHED_TILE_WALL);
+            entries.add(BlockInitializer.CHISELED_POLISHED_TILES);
             // Corruption
             entries.add(BlockInitializer.PURIFIED_CORRUPTION);
             entries.add(BlockInitializer.REFINED_CORRUPTION);

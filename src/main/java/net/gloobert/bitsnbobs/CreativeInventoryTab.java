@@ -46,6 +46,7 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.WOVEN_WOOL_ORANGE);
             entries.add(BlockInitializer.WOVEN_WOOL_YELLOW);
             entries.add(BlockInitializer.WOVEN_WOOL_LIME);
+            entries.add(BlockInitializer.WOVEN_WOOL_GREEN);
             entries.add(BlockInitializer.WOVEN_WOOL_CYAN);
             entries.add(BlockInitializer.WOVEN_WOOL_LIGHT_BLUE);
             entries.add(BlockInitializer.WOVEN_WOOL_BLUE);

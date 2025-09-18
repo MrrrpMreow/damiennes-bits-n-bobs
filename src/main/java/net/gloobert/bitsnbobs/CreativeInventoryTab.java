@@ -52,6 +52,8 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.WOVEN_WOOL_PURPLE);
             entries.add(BlockInitializer.WOVEN_WOOL_MAGENTA);
             entries.add(BlockInitializer.WOVEN_WOOL_PINK);
+            // Etc
+            entries.add(BlockInitializer.GILDED_DEEPSLATE);
         })
         .build());
     public static void initialize() {

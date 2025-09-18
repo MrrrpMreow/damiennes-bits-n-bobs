@@ -59,6 +59,11 @@ public class BlockInitializer {
     public static final Block WOVEN_WOOL_RED = register("woven_wool_red", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
     public static final Block WOVEN_WOOL_YELLOW = register("woven_wool_yellow", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
 
+    public static final Block GILDED_DEEPSLATE = register("gilded_deepslate", new Block(Block.Settings.create()
+        .strength(4.0f)
+        .sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
+    ), true);
+
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);
         // Make it easy to distinctly separate Item and Block forms of something if preferred

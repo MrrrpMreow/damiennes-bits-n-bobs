@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "bitsnbobs:block/trimmed_amethyst",
+    "side": "bitsnbobs:block/amethyst_pillar"
+  }
+}

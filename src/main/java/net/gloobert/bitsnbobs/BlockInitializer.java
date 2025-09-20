@@ -6,6 +6,7 @@ import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -63,6 +64,17 @@ public class BlockInitializer {
         .strength(4.0f)
         .sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
     ), true);
+
+    public static final Block CUT_AMETHYST_BLOCK = register("cut_amethyst", new Block(Block.Settings.create()
+        .strength(2.0f)
+        .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+    ), true);
+    public static final Block POLISHED_CUT_AMETHYST_BLOCK = register("polished_cut_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
+    public static final Block CUT_AMETHYST_TILES = register("cut_amethyst_tiles", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
+    public static final Block POLISHED_AMETHYST_BLOCK = register("polished_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
+    public static final Block POLISHED_AMETHYST_BRICKS = register("polished_amethyst_bricks", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
+    public static final Block AMETHYST_PILLAR = register("amethyst_pillar", new PillarBlock(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
+    public static final Block TRIMMED_AMETHYST = register("trimmed_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
 
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);

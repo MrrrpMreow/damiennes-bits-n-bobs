@@ -1,6 +1,11 @@
 {
+  "loader": "fusion:model",
+  "type": "connecting",
   "parent": "block/cube_all",
   "textures": {
     "all": "bitsnbobs:block/trimmed_amethyst"
+  },
+  "connections": {
+    "type": "is_same_block"
   }
 }

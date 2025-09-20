@@ -1,7 +1,14 @@
 {
+  "loader": "fusion:model",
+  "type": "connecting",
   "parent": "minecraft:block/cube_column",
   "textures": {
     "end": "bitsnbobs:block/trimmed_amethyst",
-    "side": "bitsnbobs:block/amethyst_pillar"
+    "side": "bitsnbobs:block/amethyst_pillar_side"
+  },
+  "connections": {
+      "end": {
+         "type": "is_same_block"
+      }
   }
 }

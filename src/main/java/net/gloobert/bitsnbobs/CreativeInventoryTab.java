@@ -55,7 +55,7 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.WOVEN_WOOL_PINK);
             // Etc
             entries.add(BlockInitializer.GILDED_DEEPSLATE);
-            entries.add(BlockInitializer.CUT_AMETHYST);
+            entries.add(BlockInitializer.CUT_AMETHYST_BLOCK);
             entries.add(BlockInitializer.POLISHED_CUT_AMETHYST_BLOCK);
             entries.add(BlockInitializer.CUT_AMETHYST_TILES);
             entries.add(BlockInitializer.POLISHED_AMETHYST_BLOCK);

@@ -73,14 +73,14 @@ public class BlockInitializer {
     public static final Block TRIMMED_AMETHYST = register("trimmed_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
 
     public static final Block WAXED_SANDED_COPPER_BLOCK = register("waxed_sanded_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
-    public static final Block WAXED_SANDED_EXPOSED_COPPER_BLOCK = register("waxed_sanded_exposed_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_EXPOSED_COPPER_BLOCK)), true);
-    public static final Block WAXED_SANDED_WEATHERED_COPPER_BLOCK = register("waxed_sanded_weathered_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_WEATHERED_COPPER_BLOCK)), true);
-    public static final Block WAXED_SANDED_OXIDIZED_COPPER_BLOCK = register("waxed_sanded_oxidized_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_OXIDIZED_COPPER_BLOCK)), true);
+    public static final Block WAXED_SANDED_EXPOSED_COPPER_BLOCK = register("waxed_sanded_exposed_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
+    public static final Block WAXED_SANDED_WEATHERED_COPPER_BLOCK = register("waxed_sanded_weathered_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
+    public static final Block WAXED_SANDED_OXIDIZED_COPPER_BLOCK = register("waxed_sanded_oxidized_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
     
     public static final Block SANDED_COPPER_BLOCK = register("sanded_copper", new OxidizableBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
-    public static final Block SANDED_EXPOSED_COPPER_BLOCK = register("sanded_exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, Block.Settings.copy(Blocks.EXPOSED_COPPER_BLOCK)), true);
-    public static final Block SANDED_WEATHERED_COPPER_BLOCK = register("sanded_weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, Block.Settings.copy(Blocks.WEATHERED_COPPER_BLOCK)), true);
-    public static final Block SANDED_OXIDIZED_COPPER_BLOCK = register("sanded_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, Block.Settings.copy(Blocks.OXIDIZED_COPPER_BLOCK)), true);
+    public static final Block SANDED_EXPOSED_COPPER_BLOCK = register("sanded_exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, Block.Settings.copy(Blocks.COPPER_BLOCK)), true);
+    public static final Block SANDED_WEATHERED_COPPER_BLOCK = register("sanded_weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, Block.Settings.copy(Blocks.COPPER_BLOCK)), true);
+    public static final Block SANDED_OXIDIZED_COPPER_BLOCK = register("sanded_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, Block.Settings.copy(Blocks.COPPER_BLOCK)), true);
 
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);

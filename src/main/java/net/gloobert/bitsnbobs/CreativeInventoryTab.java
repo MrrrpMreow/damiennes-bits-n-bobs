@@ -61,7 +61,6 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.POLISHED_AMETHYST_BRICKS);
             entries.add(BlockInitializer.TRIMMED_AMETHYST);
             entries.add(BlockInitializer.AMETHYST_PILLAR);
-            entries.add(BlockInitializer.AMETHYST_PILLAR);
             // Sanded Copper
             entries.add(BlockInitializer.SANDED_COPPER_BLOCK);
             entries.add(BlockInitializer.SANDED_EXPOSED_COPPER_BLOCK);

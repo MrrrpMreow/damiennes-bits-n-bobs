@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "d": {
+      "item": "minecraft:polished_diorite"
+    }
+  },
+  "pattern": [
+    "Dd",
+    "dD"
+  ],
+  "result": {
+    "count": 4,
+    "item": "bitsnbobs:polished_tiles"
+  },
+  "show_notification": true
+}

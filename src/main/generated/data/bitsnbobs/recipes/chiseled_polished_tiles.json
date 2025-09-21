@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "T": {
+      "item": "bitsnbobs:polished_tile_slab"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "count": 4,
+    "item": "bitsnbobs:chiseled_polished_tiles"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_polished_tile_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:polished_tile_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_polished_tiles": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:polished_tiles"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsnbobs:polished_tile_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_polished_tiles",
+      "has_polished_tile_stairs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsnbobs:polished_tile_stairs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

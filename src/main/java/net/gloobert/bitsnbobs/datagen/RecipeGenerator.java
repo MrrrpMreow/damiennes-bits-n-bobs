@@ -80,7 +80,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.PURPLE_DYE, TagGenerator.WOVEN_WOOL, BlockInitializer.WOVEN_WOOL_PURPLE.asItem(), exporter, "dye_purple_woven_wool");
         generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.MAGENTA_DYE, TagGenerator.WOVEN_WOOL, BlockInitializer.WOVEN_WOOL_MAGENTA.asItem(), exporter, "dye_magenta_woven_wool");
         generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.PINK_DYE, TagGenerator.WOVEN_WOOL, BlockInitializer.WOVEN_WOOL_PINK.asItem(), exporter, "dye_pink_woven_wool");
-        
+        // Amethyst variant stonecutting
         SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CUT_AMETHYST_BLOCK.asItem())
         .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
         .offerTo(exporter);
@@ -105,5 +105,56 @@ public class RecipeGenerator extends FabricRecipeProvider {
         SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, Items.AMETHYST_BLOCK)
         .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
         .offerTo(exporter);
+        // Tiles
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILES.asItem(), 4)
+        .pattern("Dd")
+        .pattern("dD")
+        .input('D', Items.POLISHED_DEEPSLATE)
+        .input('d', Items.POLISHED_DIORITE)
+        .criterion(FabricRecipeProvider.hasItem(Items.POLISHED_DEEPSLATE), FabricRecipeProvider.conditionsFromItem(Items.POLISHED_DEEPSLATE))
+        .criterion(FabricRecipeProvider.hasItem(Items.POLISHED_DIORITE), FabricRecipeProvider.conditionsFromItem(Items.POLISHED_DIORITE))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILE_SLAB.asItem(), 6)
+        .pattern("TTT")
+        .input('T', BlockInitializer.POLISHED_TILES)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILE_SLAB.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILE_SLAB.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILE_STAIRS.asItem(), 4)
+        .pattern("T  ")
+        .pattern("TT ")
+        .pattern("TTT")
+        .input('T', BlockInitializer.POLISHED_TILES)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILE_STAIRS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILE_STAIRS.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILE_WALL.asItem(), 4)
+        .pattern("TTT")
+        .pattern("TTT")
+        .input('T', BlockInitializer.POLISHED_TILES)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILE_WALL.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILE_WALL.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_POLISHED_TILES.asItem(), 4)
+        .pattern("T")
+        .pattern("T")
+        .input('T', BlockInitializer.POLISHED_TILE_SLAB)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILE_SLAB.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILE_SLAB.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.CHISELED_POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.CHISELED_POLISHED_TILES.asItem()))
+        .offerTo(exporter);
+        // Tiles (Stonecutting)
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.POLISHED_TILES.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILE_SLAB.asItem(), 2)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "polished_tile_slab_from_stonecutting"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.POLISHED_TILES.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILE_STAIRS.asItem())
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "polished_tile_stairs_from_stonecutting"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.POLISHED_TILES.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_TILE_WALL.asItem())
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "polished_tile_wall_from_stonecutting"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.POLISHED_TILES.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_POLISHED_TILES.asItem())
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "chiseled_polished_tiles_from_stonecutting"));
     }
 }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "w": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "pattern": [
+    "ww",
+    "ww"
+  ],
+  "result": {
+    "item": "bitsnbobs:woven_wool_green"
+  },
+  "show_notification": true
+}

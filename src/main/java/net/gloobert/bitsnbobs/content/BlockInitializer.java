@@ -1,4 +1,4 @@
-package net.gloobert.bitsnbobs;
+package net.gloobert.bitsnbobs.content;
 
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
@@ -61,16 +61,13 @@ public class BlockInitializer {
         .sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
     ), true);
 
-    public static final Block CUT_AMETHYST_BLOCK = register("cut_amethyst", new Block(Block.Settings.create()
-        .strength(2.0f)
-        .sounds(BlockSoundGroup.AMETHYST_BLOCK)
-    ), true);
-    public static final Block POLISHED_CUT_AMETHYST_BLOCK = register("polished_cut_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
-    public static final Block CUT_AMETHYST_TILES = register("cut_amethyst_tiles", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
-    public static final Block POLISHED_AMETHYST_BLOCK = register("polished_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
-    public static final Block POLISHED_AMETHYST_BRICKS = register("polished_amethyst_bricks", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
-    public static final Block AMETHYST_PILLAR = register("amethyst_pillar", new PillarBlock(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
-    public static final Block TRIMMED_AMETHYST = register("trimmed_amethyst", new Block(Block.Settings.copy(CUT_AMETHYST_BLOCK)), true);
+    public static final Block CUT_AMETHYST_BLOCK = register("cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
+    public static final Block POLISHED_CUT_AMETHYST_BLOCK = register("polished_cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
+    public static final Block CUT_AMETHYST_TILES = register("cut_amethyst_tiles", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
+    public static final Block POLISHED_AMETHYST_BLOCK = register("polished_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
+    public static final Block POLISHED_AMETHYST_BRICKS = register("polished_amethyst_bricks", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
+    public static final Block AMETHYST_PILLAR = register("amethyst_pillar", new PillarBlock(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
+    public static final Block TRIMMED_AMETHYST = register("trimmed_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
 
     public static final Block WAXED_SANDED_COPPER_BLOCK = register("waxed_sanded_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
     public static final Block WAXED_SANDED_EXPOSED_COPPER_BLOCK = register("waxed_sanded_exposed_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);

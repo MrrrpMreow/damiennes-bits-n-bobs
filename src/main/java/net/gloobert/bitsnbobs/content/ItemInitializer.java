@@ -1,10 +1,10 @@
-package net.gloobert.bitsnbobs;
+package net.gloobert.bitsnbobs.content;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
-import net.gloobert.bitsnbobs.BlockInitializer;
+import net.gloobert.bitsnbobs.content.BlockInitializer;
 
 public class ItemInitializer {
     private ItemInitializer() {}

@@ -5,10 +5,10 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import net.gloobert.bitsnbobs.BlockInitializer;
-import net.gloobert.bitsnbobs.ItemInitializer;
-import net.gloobert.bitsnbobs.CreativeInventoryTab;
-import net.gloobert.bitsnbobs.CopperOxidizationRegistry;
+import net.gloobert.bitsnbobs.content.BlockInitializer;
+import net.gloobert.bitsnbobs.content.ItemInitializer;
+import net.gloobert.bitsnbobs.content.CreativeInventoryTab;
+import net.gloobert.bitsnbobs.content.CopperOxidizationRegistry;
 
 public class DamiennesBitsnBobs implements ModInitializer {
 	public static final String MOD_ID = "damiennes-bits-n-bobs";

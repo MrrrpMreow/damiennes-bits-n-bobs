@@ -1,4 +1,4 @@
-package net.gloobert.bitsnbobs;
+package net.gloobert.bitsnbobs.content;
 
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
@@ -11,8 +11,8 @@ import net.minecraft.text.Text;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 
-import net.gloobert.bitsnbobs.BlockInitializer;
-import net.gloobert.bitsnbobs.ItemInitializer;
+import net.gloobert.bitsnbobs.content.BlockInitializer;
+import net.gloobert.bitsnbobs.content.ItemInitializer;
 
 public class CreativeInventoryTab {
         public static final ItemGroup GLOWSTONE_EXTENDED = Registry.register(Registries.ITEM_GROUP, new Identifier("bitsnbobs", "bitsnbobs_creative"), FabricItemGroup.builder()

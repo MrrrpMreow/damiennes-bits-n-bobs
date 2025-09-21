@@ -1,7 +1,7 @@
-package net.gloobert.bitsnbobs;
+package net.gloobert.bitsnbobs.content;
 
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
-import net.gloobert.bitsnbobs.BlockInitializer;
+import net.gloobert.bitsnbobs.content.BlockInitializer;
 
 public class CopperOxidizationRegistry {
 

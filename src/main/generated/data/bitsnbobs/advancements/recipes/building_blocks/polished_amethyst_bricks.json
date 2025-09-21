@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_black_dye": {
+    "has_amethyst_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:black_dye"
+              "minecraft:amethyst_block"
             ]
           }
         ]
@@ -15,33 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "bitsnbobs:dye_black_woven_wool"
+        "recipe": "bitsnbobs:polished_amethyst_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_woven_wool_black": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "bitsnbobs:woven_wool_black"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_black_dye",
-      "has_woven_wool_black",
+      "has_amethyst_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "bitsnbobs:dye_black_woven_wool"
+      "bitsnbobs:polished_amethyst_bricks"
     ]
   },
   "sends_telemetry_event": false

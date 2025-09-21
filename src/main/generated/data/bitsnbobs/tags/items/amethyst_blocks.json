@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "bitsnbobs:cut_amethyst",
+    "bitsnbobs:polished_cut_amethyst",
+    "bitsnbobs:polished_amethyst",
+    "bitsnbobs:cut_amethyst_tiles",
+    "bitsnbobs:polished_amethyst_bricks",
+    "bitsnbobs:amethyst_pillar",
+    "bitsnbobs:trimmed_amethyst",
+    "minecraft:amethyst_block"
+  ]
+}

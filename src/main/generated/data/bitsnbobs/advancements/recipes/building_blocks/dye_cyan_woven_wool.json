@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_cyan_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cyan_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "bitsnbobs:dye_cyan_woven_wool"
@@ -22,6 +34,7 @@
   },
   "requirements": [
     [
+      "has_cyan_dye",
       "has_woven_wool_cyan",
       "has_the_recipe"
     ]

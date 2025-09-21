@@ -7,6 +7,18 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
+    "has_white_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:white_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_woven_wool_white": {
       "conditions": {
         "items": [
@@ -22,6 +34,7 @@
   },
   "requirements": [
     [
+      "has_white_dye",
       "has_woven_wool_white",
       "has_the_recipe"
     ]

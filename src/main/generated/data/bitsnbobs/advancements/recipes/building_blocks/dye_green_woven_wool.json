@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_green_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:green_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "bitsnbobs:dye_green_woven_wool"
@@ -22,6 +34,7 @@
   },
   "requirements": [
     [
+      "has_green_dye",
       "has_woven_wool_green",
       "has_the_recipe"
     ]

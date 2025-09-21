@@ -9,9 +9,11 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SingleItemRecipeJsonBuilder;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.item.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -37,6 +39,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
     private void generateDyeingRecipe(RecipeCategory category, Item inItem, TagKey inItems, Item outItem, Consumer<RecipeJsonProvider> exporter, String id) {
         ShapelessRecipeJsonBuilder.create(category, outItem)
         .input(inItem).input(inItems)
+        .criterion(FabricRecipeProvider.hasItem(inItem), FabricRecipeProvider.conditionsFromItem(inItem))
         .criterion(FabricRecipeProvider.hasItem(outItem), FabricRecipeProvider.conditionsFromItem(outItem))
         .offerTo(exporter, Identifier.of("bitsnbobs", id));
     }
@@ -77,5 +80,30 @@ public class RecipeGenerator extends FabricRecipeProvider {
         generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.PURPLE_DYE, TagGenerator.WOVEN_WOOL, BlockInitializer.WOVEN_WOOL_PURPLE.asItem(), exporter, "dye_purple_woven_wool");
         generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.MAGENTA_DYE, TagGenerator.WOVEN_WOOL, BlockInitializer.WOVEN_WOOL_MAGENTA.asItem(), exporter, "dye_magenta_woven_wool");
         generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.PINK_DYE, TagGenerator.WOVEN_WOOL, BlockInitializer.WOVEN_WOOL_PINK.asItem(), exporter, "dye_pink_woven_wool");
+        
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CUT_AMETHYST_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_CUT_AMETHYST_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_AMETHYST_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CUT_AMETHYST_TILES.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_AMETHYST_BRICKS.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.AMETHYST_PILLAR.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.TRIMMED_AMETHYST.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.fromTag(TagGenerator.AMETHYST_BLOCKS), RecipeCategory.BUILDING_BLOCKS, Items.AMETHYST_BLOCK)
+        .criterion(FabricRecipeProvider.hasItem(Items.AMETHYST_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.AMETHYST_BLOCK))
+        .offerTo(exporter);
     }
 }

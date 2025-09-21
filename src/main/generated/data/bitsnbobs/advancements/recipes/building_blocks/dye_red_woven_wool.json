@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_red_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:red_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "bitsnbobs:dye_red_woven_wool"
@@ -22,6 +34,7 @@
   },
   "requirements": [
     [
+      "has_red_dye",
       "has_woven_wool_red",
       "has_the_recipe"
     ]

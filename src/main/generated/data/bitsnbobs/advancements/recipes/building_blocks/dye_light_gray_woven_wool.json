@@ -1,6 +1,18 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
+    "has_light_gray_dye": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:light_gray_dye"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "bitsnbobs:dye_light_gray_woven_wool"
@@ -22,6 +34,7 @@
   },
   "requirements": [
     [
+      "has_light_gray_dye",
       "has_woven_wool_light_gray",
       "has_the_recipe"
     ]

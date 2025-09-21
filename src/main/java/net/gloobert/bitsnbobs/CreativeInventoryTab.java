@@ -53,8 +53,7 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.WOVEN_WOOL_PURPLE);
             entries.add(BlockInitializer.WOVEN_WOOL_MAGENTA);
             entries.add(BlockInitializer.WOVEN_WOOL_PINK);
-            // Etc
-            entries.add(BlockInitializer.GILDED_DEEPSLATE);
+            // Amethyst Block Palette
             entries.add(BlockInitializer.CUT_AMETHYST_BLOCK);
             entries.add(BlockInitializer.POLISHED_CUT_AMETHYST_BLOCK);
             entries.add(BlockInitializer.CUT_AMETHYST_TILES);
@@ -62,6 +61,19 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.POLISHED_AMETHYST_BRICKS);
             entries.add(BlockInitializer.TRIMMED_AMETHYST);
             entries.add(BlockInitializer.AMETHYST_PILLAR);
+            entries.add(BlockInitializer.AMETHYST_PILLAR);
+            // Sanded Copper
+            entries.add(BlockInitializer.SANDED_COPPER_BLOCK);
+            entries.add(BlockInitializer.SANDED_EXPOSED_COPPER_BLOCK);
+            entries.add(BlockInitializer.SANDED_WEATHERED_COPPER_BLOCK);
+            entries.add(BlockInitializer.SANDED_OXIDIZED_COPPER_BLOCK);
+            entries.add(BlockInitializer.WAXED_SANDED_COPPER_BLOCK);
+            entries.add(BlockInitializer.WAXED_SANDED_EXPOSED_COPPER_BLOCK);
+            entries.add(BlockInitializer.WAXED_SANDED_WEATHERED_COPPER_BLOCK);
+            entries.add(BlockInitializer.WAXED_SANDED_OXIDIZED_COPPER_BLOCK);
+
+            // Etc
+            entries.add(BlockInitializer.GILDED_DEEPSLATE);
 
         })
         .build());

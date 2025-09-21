@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import net.gloobert.bitsnbobs.BlockInitializer;
 import net.gloobert.bitsnbobs.ItemInitializer;
 import net.gloobert.bitsnbobs.CreativeInventoryTab;
+import net.gloobert.bitsnbobs.CopperOxidizationRegistry;
 
 public class DamiennesBitsnBobs implements ModInitializer {
 	public static final String MOD_ID = "damiennes-bits-n-bobs";
@@ -27,5 +28,6 @@ public class DamiennesBitsnBobs implements ModInitializer {
 		BlockInitializer.initialize();
 		ItemInitializer.initialize();
 		CreativeInventoryTab.initialize();
+		CopperOxidizationRegistry.initialize();
 	}
 }

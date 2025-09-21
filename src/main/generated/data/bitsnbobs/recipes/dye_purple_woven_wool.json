@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "tag": "bitsnbobs:woven_wool"
+    }
+  ],
+  "result": {
+    "item": "bitsnbobs:woven_wool_purple"
+  }
+}

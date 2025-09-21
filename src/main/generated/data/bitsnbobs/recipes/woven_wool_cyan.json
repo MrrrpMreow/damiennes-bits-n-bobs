@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "w": {
+      "item": "minecraft:cyan_wool"
+    }
+  },
+  "pattern": [
+    "ww",
+    "ww"
+  ],
+  "result": {
+    "count": 4,
+    "item": "bitsnbobs:woven_wool_cyan"
+  },
+  "show_notification": true
+}

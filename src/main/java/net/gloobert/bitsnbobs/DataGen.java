@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
 import net.gloobert.bitsnbobs.datagen.RecipeGenerator;
+import net.gloobert.bitsnbobs.datagen.TagGenerator;
  
 public class DataGen implements DataGeneratorEntrypoint {
     @Override
@@ -11,5 +12,6 @@ public class DataGen implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack BitsNBobsData = generator.createPack();
  
         BitsNBobsData.addProvider(RecipeGenerator::new);
+        BitsNBobsData.addProvider(TagGenerator::new);
     }
 }

@@ -12,7 +12,6 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SingleItemRecipeJsonBuilder;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.TagKey;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.item.Items;
 import net.minecraft.item.Item;
@@ -36,7 +35,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         .offerTo(exporter, Identifier.of("bitsnbobs", outItem.toString()));
     }
 
-    private void generateDyeingRecipe(RecipeCategory category, Item inItem, TagKey inItems, Item outItem, Consumer<RecipeJsonProvider> exporter, String id) {
+    private void generateDyeingRecipe(RecipeCategory category, Item inItem, TagKey<Item> inItems, Item outItem, Consumer<RecipeJsonProvider> exporter, String id) {
         ShapelessRecipeJsonBuilder.create(category, outItem)
         .input(inItem).input(inItems)
         .criterion(FabricRecipeProvider.hasItem(inItem), FabricRecipeProvider.conditionsFromItem(inItem))

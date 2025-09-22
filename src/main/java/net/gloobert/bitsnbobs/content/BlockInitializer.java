@@ -7,9 +7,10 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
+import net.gloobert.bitsnbobs.content.blocktypes.WarpedWartCropBlock;
 
 public class BlockInitializer {
 
@@ -75,10 +76,11 @@ public class BlockInitializer {
     public static final Block WAXED_SANDED_OXIDIZED_COPPER_BLOCK = register("waxed_sanded_oxidized_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
     
     public static final Block SANDED_COPPER_BLOCK = register("sanded_copper", new OxidizableBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
-    public static final Block SANDED_EXPOSED_COPPER_BLOCK = register("sanded_exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, Block.Settings.copy(Blocks.COPPER_BLOCK)), true);
-    public static final Block SANDED_WEATHERED_COPPER_BLOCK = register("sanded_weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, Block.Settings.copy(Blocks.COPPER_BLOCK)), true);
-    public static final Block SANDED_OXIDIZED_COPPER_BLOCK = register("sanded_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, Block.Settings.copy(Blocks.COPPER_BLOCK)), true);
+    public static final Block SANDED_EXPOSED_COPPER_BLOCK = register("sanded_exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
+    public static final Block SANDED_WEATHERED_COPPER_BLOCK = register("sanded_weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
+    public static final Block SANDED_OXIDIZED_COPPER_BLOCK = register("sanded_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
 
+    public static final Block WARPED_WART_CROP = register("warped_wart_crop", new WarpedWartCropBlock(FabricBlockSettings.copy(Blocks.NETHER_WART)), false);
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);
         // Make it easy to distinctly separate Item and Block forms of something if preferred

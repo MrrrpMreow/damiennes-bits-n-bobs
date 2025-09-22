@@ -20,6 +20,9 @@
 		],
 		"main": [
 			"net.gloobert.bitsnbobs.DamiennesBitsnBobs"
+		],
+		"client": [
+			"net.gloobert.bitsnbobs.ClientBits"
 		]
 	},
 	"mixins": [

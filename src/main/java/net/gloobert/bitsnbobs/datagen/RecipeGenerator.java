@@ -18,7 +18,6 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
 import net.gloobert.bitsnbobs.content.BlockInitializer;
-import net.gloobert.bitsnbobs.datagen.TagGenerator;
 
 public class RecipeGenerator extends FabricRecipeProvider {
 	public RecipeGenerator(FabricDataOutput generator) {

@@ -3,5 +3,10 @@
   "textures": {
     "end": "bitsnbobs:block/trimmed_amethyst",
     "side": "bitsnbobs:block/amethyst_pillar_side"
+  },
+  "connections": {
+      "end": {
+         "type": "is_same_block"
+      }
   }
 }

@@ -5,7 +5,6 @@ import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
-import net.gloobert.bitsnbobs.content.BlockInitializer;
 
 public class ItemInitializer {
     private ItemInitializer() {}

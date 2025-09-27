@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blue_nether_brick_stairs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:blue_nether_brick_stairs"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_blue_nether_bricks": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:blue_nether_bricks"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsnbobs:blue_nether_brick_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_blue_nether_bricks",
+      "has_blue_nether_brick_stairs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsnbobs:blue_nether_brick_stairs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

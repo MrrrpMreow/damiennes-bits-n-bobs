@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:nether_bricks"
+    },
+    "W": {
+      "item": "bitsnbobs:warped_wart"
+    }
+  },
+  "pattern": [
+    "WB",
+    "BW"
+  ],
+  "result": {
+    "count": 4,
+    "item": "bitsnbobs:blue_nether_bricks"
+  },
+  "show_notification": true
+}

@@ -1,12 +1,13 @@
 package net.gloobert.bitsnbobs.datagen;
 
+import java.util.List;
 import java.util.function.Consumer;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
-
+import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SingleItemRecipeJsonBuilder;
@@ -18,6 +19,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 
 import net.gloobert.bitsnbobs.content.BlockInitializer;
+import net.gloobert.bitsnbobs.content.ItemInitializer;
 
 public class RecipeGenerator extends FabricRecipeProvider {
 	public RecipeGenerator(FabricDataOutput generator) {
@@ -154,5 +156,95 @@ public class RecipeGenerator extends FabricRecipeProvider {
         SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.POLISHED_TILES.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_POLISHED_TILES.asItem())
         .criterion(FabricRecipeProvider.hasItem(BlockInitializer.POLISHED_TILES.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.POLISHED_TILES.asItem()))
         .offerTo(exporter, Identifier.of("bitsnbobs", "chiseled_polished_tiles_from_stonecutting"));
+        // Blue Nether Bricks
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICKS.asItem(), 4)
+        .pattern("WB")
+        .pattern("BW")
+        .input('W', ItemInitializer.WARPED_WART)
+        .input('B', Items.NETHER_BRICKS)
+        .criterion(FabricRecipeProvider.hasItem(ItemInitializer.WARPED_WART), FabricRecipeProvider.conditionsFromItem(ItemInitializer.WARPED_WART))
+        .criterion(FabricRecipeProvider.hasItem(Items.NETHER_BRICKS), FabricRecipeProvider.conditionsFromItem(Items.NETHER_BRICKS))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICK_SLAB.asItem(), 6)
+        .pattern("TTT")
+        .input('T', BlockInitializer.BLUE_NETHER_BRICKS)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICK_SLAB.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICK_SLAB.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICK_STAIRS.asItem(), 4)
+        .pattern("T  ")
+        .pattern("TT ")
+        .pattern("TTT")
+        .input('T', BlockInitializer.BLUE_NETHER_BRICKS)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICK_STAIRS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICK_STAIRS.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICK_WALL.asItem(), 4)
+        .pattern("TTT")
+        .pattern("TTT")
+        .input('T', BlockInitializer.BLUE_NETHER_BRICKS)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICK_WALL.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICK_WALL.asItem()))
+        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_BLUE_NETHER_BRICKS.asItem(), 4)
+        .pattern("T")
+        .pattern("T")
+        .input('T', BlockInitializer.BLUE_NETHER_BRICK_SLAB)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICK_SLAB.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICK_SLAB.asItem()))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.CHISELED_BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.CHISELED_BLUE_NETHER_BRICKS.asItem()))
+        .offerTo(exporter);
+        // Blue Nether Bricks (Stonecutting)
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICK_SLAB.asItem(), 2)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "blue_nether_brick_slab_from_stonecutting"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICK_STAIRS.asItem())
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "blue_nether_brick_stairs_from_stonecutting"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.BLUE_NETHER_BRICK_WALL.asItem())
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "blue_nether_brick_wall_from_stonecutting"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_BLUE_NETHER_BRICKS.asItem())
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.BLUE_NETHER_BRICKS.asItem()))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "chiseled_blue_nether_bricks_from_stonecutting"));
+        // Red Chiseled Nether Bricks
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_RED_NETHER_BRICKS.asItem(), 4)
+        .pattern("T")
+        .pattern("T")
+        .input('T', Items.RED_NETHER_BRICK_SLAB)
+        .criterion(FabricRecipeProvider.hasItem(Items.RED_NETHER_BRICK_SLAB), FabricRecipeProvider.conditionsFromItem(Items.RED_NETHER_BRICK_SLAB))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.CHISELED_RED_NETHER_BRICKS.asItem()), FabricRecipeProvider.conditionsFromItem(BlockInitializer.CHISELED_RED_NETHER_BRICKS.asItem()))
+        .offerTo(exporter);
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.RED_NETHER_BRICK_SLAB), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.CHISELED_RED_NETHER_BRICKS.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.RED_NETHER_BRICK_SLAB), FabricRecipeProvider.conditionsFromItem(Items.RED_NETHER_BRICK_SLAB))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "chiseled_red_nether_bricks_from_stonecutting"));
+        // Copper "Sanding" (stonecutting)
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.SANDED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.COPPER_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.COPPER_BLOCK))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_copper"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.WEATHERED_COPPER), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.SANDED_WEATHERED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.WEATHERED_COPPER), FabricRecipeProvider.conditionsFromItem(Items.WEATHERED_COPPER))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_weathered_copper"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.EXPOSED_COPPER), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.SANDED_EXPOSED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.EXPOSED_COPPER), FabricRecipeProvider.conditionsFromItem(Items.EXPOSED_COPPER))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_exposed_copper"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.OXIDIZED_COPPER), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.SANDED_OXIDIZED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.OXIDIZED_COPPER), FabricRecipeProvider.conditionsFromItem(Items.OXIDIZED_COPPER))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_oxidized_copper"));
+        // Waxed equivalents (i dont want people having to deal with mass stonecutting and THEN waxing, most people have a backlog of waxed copper anyway)
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.WAXED_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.WAXED_SANDED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.WAXED_COPPER_BLOCK), FabricRecipeProvider.conditionsFromItem(Items.WAXED_COPPER_BLOCK))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_waxed_copper"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.WAXED_WEATHERED_COPPER), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.WAXED_SANDED_WEATHERED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.WAXED_WEATHERED_COPPER), FabricRecipeProvider.conditionsFromItem(Items.WAXED_WEATHERED_COPPER))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_waxed_weathered_copper"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.WAXED_EXPOSED_COPPER), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.WAXED_SANDED_EXPOSED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.WAXED_EXPOSED_COPPER), FabricRecipeProvider.conditionsFromItem(Items.WAXED_EXPOSED_COPPER))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_waxed_exposed_copper"));
+        SingleItemRecipeJsonBuilder.createStonecutting(Ingredient.ofItems(Items.WAXED_OXIDIZED_COPPER), RecipeCategory.BUILDING_BLOCKS, BlockInitializer.WAXED_SANDED_OXIDIZED_COPPER_BLOCK.asItem())
+        .criterion(FabricRecipeProvider.hasItem(Items.WAXED_OXIDIZED_COPPER), FabricRecipeProvider.conditionsFromItem(Items.WAXED_OXIDIZED_COPPER))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sanding_waxed_oxidized_copper"));
+        // Warped Wart salvaging
+        RecipeProvider.offerSmelting(exporter, List.of(Items.WARPED_WART_BLOCK), RecipeCategory.BUILDING_BLOCKS, ItemInitializer.WARPED_WART, 0.1F, 300, "bitsnbobs");
     }
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "bitsnbobs:blue_nether_bricks"
+  },
+  "result": "bitsnbobs:chiseled_blue_nether_bricks"
+}

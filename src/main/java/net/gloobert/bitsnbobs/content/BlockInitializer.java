@@ -27,8 +27,8 @@ public class BlockInitializer {
     public static final Block POLISHED_TILE_SLAB = register("polished_tile_slab", new SlabBlock(Block.Settings.copy(POLISHED_TILES)), true);
     public static final Block POLISHED_TILE_WALL = register("polished_tile_wall", new WallBlock(Block.Settings.copy(POLISHED_TILES)), true);
     // Corruption
-    public static final Block PURIFIED_CORRUPTION = register("purified_corruption", new Block(Block.Settings.create().strength(4.0f)), true);
-    public static final Block REFINED_CORRUPTION = register("refined_corruption", new Block(Block.Settings.create().strength(4.0f)), true);
+    public static final Block PURIFIED_CORRUPTION = register("purified_corruption", new Block(Block.Settings.copy(Blocks.BEDROCK)), true);
+    public static final Block REFINED_CORRUPTION = register("refined_corruption", new Block(Block.Settings.copy(Blocks.BEDROCK)), true);
     // Woven Wool
     public static final Block WOVEN_WOOL_WHITE = register("woven_wool_white", new Block(FabricBlockSettings.copy(Blocks.WHITE_WOOL)), true);
     public static final Block WOVEN_WOOL_BLACK = register("woven_wool_black", new Block(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);

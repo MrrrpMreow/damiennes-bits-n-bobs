@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "held_warped_wart": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:warped_wart"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:warped_wart_block"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "held_warped_wart"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

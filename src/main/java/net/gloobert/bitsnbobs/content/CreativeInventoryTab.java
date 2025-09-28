@@ -82,9 +82,17 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.WAXED_SANDED_EXPOSED_COPPER_BLOCK);
             entries.add(BlockInitializer.WAXED_SANDED_WEATHERED_COPPER_BLOCK);
             entries.add(BlockInitializer.WAXED_SANDED_OXIDIZED_COPPER_BLOCK);
-
             // Etc
             entries.add(BlockInitializer.GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.IRON_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.COPPER_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.DIAMOND_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.EMERALD_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.LAPIS_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.NETHERITE_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.REDSTONE_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.AMETHYST_GILDED_DEEPSLATE);
+            entries.add(BlockInitializer.QUARTZ_GILDED_DEEPSLATE);
 
         })
         .build());

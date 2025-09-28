@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:bitsnbobs/root",
+  "criteria": {
+    "held_netherite_deepslate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:netherite_gilded_deepslate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.netherite_deepslate.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "bitsnbobs:netherite_gilded_deepslate"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.netherite_deepslate.title"
+    }
+  },
+  "requirements": [
+    [
+      "held_netherite_deepslate"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -61,5 +61,20 @@
     "block.bitsnbobs.waxed_sanded_exposed_copper":"Waxed Sanded Exposed Copper Block",
     "block.bitsnbobs.waxed_sanded_weathered_copper":"Waxed Sanded Weathered Copper Block",
     "block.bitsnbobs.waxed_sanded_oxidized_copper":"Waxed Sanded Oxidized Copper Block",
-    "block.bitsnbobs.gilded_deepslate":"Gold Gilded Deepslate"
+    "block.bitsnbobs.gilded_deepslate":"Gold Gilded Deepslate",
+    "block.bitsnbobs.copper_gilded_deepslate":"Copper Gilded Deepslate",
+    "block.bitsnbobs.amethyst_gilded_deepslate":"Amethyst Gilded Deepslate",
+    "block.bitsnbobs.netherite_gilded_deepslate":"Netherite Gilded Deepslate",
+    "block.bitsnbobs.quartz_gilded_deepslate":"Nether Quartz Gilded Deepslate",
+    "block.bitsnbobs.emerald_gilded_deepslate":"Emerald Gilded Deepslate",
+    "block.bitsnbobs.lapis_gilded_deepslate":"Lapis Gilded Deepslate",
+    "block.bitsnbobs.diamond_gilded_deepslate":"Diamond Quartz Gilded Deepslate",
+    "block.bitsnbobs.iron_gilded_deepslate":"Iron Gilded Deepslate",
+    "block.bitsnbobs.redstone_gilded_deepslate":"Redstone Gilded Deepslate",
+    "advancements.bitsnbobs.root.title":"Bits 'n' Bobs",
+    "advancements.bitsnbobs.root.description":"A variety of interesting additions",
+    "advancements.bitsnbobs.warped_wart.title":"Strange and Twisted",
+    "advancements.bitsnbobs.warped_wart.description":"Salvage a usable crop out of a Warped Wart block",
+    "advancements.bitsnbobs.netherite_deepslate.title":"Weird Flex But Okay",
+    "advancements.bitsnbobs.netherite_deepslate.description":"Spend an entire Netherite Ingot on Netherite Gilded Deepslate... and question your sanity"
 }

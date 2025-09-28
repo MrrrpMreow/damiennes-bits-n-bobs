@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.gloobert.bitsnbobs.datagen.RecipeGenerator;
 import net.gloobert.bitsnbobs.datagen.TagGenerator;
 import net.gloobert.bitsnbobs.datagen.LootTableGenerator;
+import net.gloobert.bitsnbobs.datagen.AdvancementGenerator;
 import net.gloobert.bitsnbobs.datagen.BlockGenerator;
  
 public class DataGen implements DataGeneratorEntrypoint {
@@ -17,5 +18,6 @@ public class DataGen implements DataGeneratorEntrypoint {
         BitsNBobsData.addProvider(TagGenerator::new);
         BitsNBobsData.addProvider(LootTableGenerator::new);
         BitsNBobsData.addProvider(BlockGenerator::new);
+        BitsNBobsData.addProvider(AdvancementGenerator::new);
     }
 }

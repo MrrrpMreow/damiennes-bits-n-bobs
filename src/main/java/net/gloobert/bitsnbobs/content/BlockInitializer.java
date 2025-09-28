@@ -1,7 +1,6 @@
 package net.gloobert.bitsnbobs.content;
 
 import net.minecraft.block.*;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
@@ -65,10 +64,16 @@ public class BlockInitializer {
     public static final Block WOVEN_CARPET_RED = register("woven_carpet_red", new CarpetBlock(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
     public static final Block WOVEN_CARPET_YELLOW = register("woven_carpet_yellow", new CarpetBlock(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
     
-    public static final Block GILDED_DEEPSLATE = register("gilded_deepslate", new Block(Block.Settings.create()
-        .strength(4.0f)
-        .sounds(BlockSoundGroup.POLISHED_DEEPSLATE)
-    ), true);
+    public static final Block GILDED_DEEPSLATE = register("gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block COPPER_GILDED_DEEPSLATE = register("copper_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block AMETHYST_GILDED_DEEPSLATE = register("amethyst_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block NETHERITE_GILDED_DEEPSLATE = register("netherite_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block EMERALD_GILDED_DEEPSLATE = register("emerald_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block REDSTONE_GILDED_DEEPSLATE = register("redstone_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block QUARTZ_GILDED_DEEPSLATE = register("quartz_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block LAPIS_GILDED_DEEPSLATE = register("lapis_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block DIAMOND_GILDED_DEEPSLATE = register("diamond_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
+    public static final Block IRON_GILDED_DEEPSLATE = register("iron_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
 
     public static final Block CUT_AMETHYST_BLOCK = register("cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block POLISHED_CUT_AMETHYST_BLOCK = register("polished_cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
@@ -99,6 +104,7 @@ public class BlockInitializer {
     }
     
     public static void registerFuel() {
+        // Wool
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_BLACK, 100);
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_BLUE, 100);
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_BROWN, 100);
@@ -115,8 +121,7 @@ public class BlockInitializer {
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_RED, 100);
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_WHITE, 100);
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_YELLOW, 100);
-
-
+        // Carpets
         FuelRegistry.INSTANCE.add(WOVEN_CARPET_BLACK, 67);
         FuelRegistry.INSTANCE.add(WOVEN_CARPET_BLUE, 67);
         FuelRegistry.INSTANCE.add(WOVEN_CARPET_BROWN, 67);

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "w": {
+      "item": "bitsnbobs:woven_wool_blue"
+    }
+  },
+  "pattern": [
+    "ww"
+  ],
+  "result": {
+    "count": 3,
+    "item": "bitsnbobs:woven_carpet_blue"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsnbobs:woven_carpet_purple"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_woven_carpet_purple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:woven_carpet_purple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_woven_wool_purple": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:woven_wool_purple"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_woven_wool_purple",
+      "has_woven_carpet_purple",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsnbobs:woven_carpet_purple"
+    ]
+  },
+  "sends_telemetry_event": false
+}

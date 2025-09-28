@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "bitsnbobs:block/woven_wool/woven_wool_green"
-  }
-}

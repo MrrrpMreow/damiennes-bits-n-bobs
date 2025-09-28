@@ -16,6 +16,7 @@ import net.gloobert.bitsnbobs.content.BlockInitializer;
 
 public class TagGenerator extends FabricTagProvider<Item> {
    public static final TagKey<Item> WOVEN_WOOL = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "woven_wool"));
+   public static final TagKey<Item> WOVEN_CARPET = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "woven_carpet"));
    public static final TagKey<Item> AMETHYST_BLOCKS = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "amethyst_blocks"));
 
    public TagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -50,5 +51,22 @@ public class TagGenerator extends FabricTagProvider<Item> {
             .add(BlockInitializer.AMETHYST_PILLAR.asItem())
             .add(BlockInitializer.TRIMMED_AMETHYST.asItem())
             .add(Items.AMETHYST_BLOCK);
+        getOrCreateTagBuilder(WOVEN_CARPET)
+            .add(BlockInitializer.WOVEN_CARPET_BLACK.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_BLUE.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_BROWN.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_CYAN.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_GRAY.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_GREEN.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_LIGHT_BLUE.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_LIGHT_GRAY.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_LIME.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_MAGENTA.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_ORANGE.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_PINK.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_PURPLE.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_RED.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_WHITE.asItem())
+            .add(BlockInitializer.WOVEN_CARPET_YELLOW.asItem());
    }
 }

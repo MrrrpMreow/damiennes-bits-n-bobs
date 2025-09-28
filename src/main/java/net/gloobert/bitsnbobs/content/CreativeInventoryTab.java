@@ -10,9 +10,9 @@ import net.minecraft.text.Text;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 
 public class CreativeInventoryTab {
-        public static final ItemGroup GLOWSTONE_EXTENDED = Registry.register(Registries.ITEM_GROUP, new Identifier("bitsnbobs", "bitsnbobs_creative"), FabricItemGroup.builder()
+        public static final ItemGroup BITSNBOBS = Registry.register(Registries.ITEM_GROUP, new Identifier("bitsnbobs", "bitsnbobs_creative"), FabricItemGroup.builder()
         .icon(() -> new ItemStack(ItemInitializer.WARPED_WART))
-        .displayName(Text.translatable("itemGroup.glowstone-extended.glowstone_extended_creative"))
+        .displayName(Text.translatable("itemGroup.bitsnbobs.bitsnbobs_creative"))
         .entries((context, entries) -> {
             // Warped Wart and related items
             entries.add(ItemInitializer.WARPED_WART);
@@ -48,6 +48,23 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.WOVEN_WOOL_PURPLE);
             entries.add(BlockInitializer.WOVEN_WOOL_MAGENTA);
             entries.add(BlockInitializer.WOVEN_WOOL_PINK);
+            // Woven Carpet
+            entries.add(BlockInitializer.WOVEN_CARPET_WHITE);
+            entries.add(BlockInitializer.WOVEN_CARPET_LIGHT_GRAY);
+            entries.add(BlockInitializer.WOVEN_CARPET_GRAY);
+            entries.add(BlockInitializer.WOVEN_CARPET_BLACK);
+            entries.add(BlockInitializer.WOVEN_CARPET_BROWN);
+            entries.add(BlockInitializer.WOVEN_CARPET_RED);
+            entries.add(BlockInitializer.WOVEN_CARPET_ORANGE);
+            entries.add(BlockInitializer.WOVEN_CARPET_YELLOW);
+            entries.add(BlockInitializer.WOVEN_CARPET_LIME);
+            entries.add(BlockInitializer.WOVEN_CARPET_GREEN);
+            entries.add(BlockInitializer.WOVEN_CARPET_CYAN);
+            entries.add(BlockInitializer.WOVEN_CARPET_LIGHT_BLUE);
+            entries.add(BlockInitializer.WOVEN_CARPET_BLUE);
+            entries.add(BlockInitializer.WOVEN_CARPET_PURPLE);
+            entries.add(BlockInitializer.WOVEN_CARPET_MAGENTA);
+            entries.add(BlockInitializer.WOVEN_CARPET_PINK);
             // Amethyst Block Palette
             entries.add(BlockInitializer.CUT_AMETHYST_BLOCK);
             entries.add(BlockInitializer.POLISHED_CUT_AMETHYST_BLOCK);

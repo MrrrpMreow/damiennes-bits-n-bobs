@@ -21,6 +21,16 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     );
     addDrop(BlockInitializer.WARPED_WART_CROP, cropDrops(BlockInitializer.WARPED_WART_CROP, ItemInitializer.WARPED_WART, ItemInitializer.WARPED_WART, WARPED_WART_CROP_AGE_CHECK));
     addDrop(BlockInitializer.AMETHYST_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.CHISELED_RED_NETHER_BRICKS);
+    addDrop(BlockInitializer.COPPER_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.DIAMOND_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.EMERALD_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.IRON_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.LAPIS_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.NETHERITE_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.QUARTZ_GILDED_DEEPSLATE);
+    addDrop(BlockInitializer.REDSTONE_GILDED_DEEPSLATE);
     addDrop(BlockInitializer.AMETHYST_PILLAR);
     addDrop(BlockInitializer.BLUE_NETHER_BRICKS);
     addDrop(BlockInitializer.BLUE_NETHER_BRICK_SLAB, slabDrops(BlockInitializer.BLUE_NETHER_BRICK_SLAB));
@@ -28,16 +38,8 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     addDrop(BlockInitializer.BLUE_NETHER_BRICK_WALL);
     addDrop(BlockInitializer.CHISELED_BLUE_NETHER_BRICKS);
     addDrop(BlockInitializer.CHISELED_POLISHED_TILES);
-    addDrop(BlockInitializer.CHISELED_RED_NETHER_BRICKS);
-    addDrop(BlockInitializer.COPPER_GILDED_DEEPSLATE);
     addDrop(BlockInitializer.CUT_AMETHYST_BLOCK);
     addDrop(BlockInitializer.CUT_AMETHYST_TILES);
-    addDrop(BlockInitializer.DIAMOND_GILDED_DEEPSLATE);
-    addDrop(BlockInitializer.EMERALD_GILDED_DEEPSLATE);
-    addDrop(BlockInitializer.GILDED_DEEPSLATE);
-    addDrop(BlockInitializer.IRON_GILDED_DEEPSLATE);
-    addDrop(BlockInitializer.LAPIS_GILDED_DEEPSLATE);
-    addDrop(BlockInitializer.NETHERITE_GILDED_DEEPSLATE);
     addDrop(BlockInitializer.POLISHED_AMETHYST_BLOCK);
     addDrop(BlockInitializer.POLISHED_AMETHYST_BRICKS);
     addDrop(BlockInitializer.POLISHED_CUT_AMETHYST_BLOCK);
@@ -45,8 +47,6 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     addDrop(BlockInitializer.POLISHED_TILE_SLAB, slabDrops(BlockInitializer.POLISHED_TILE_SLAB));
     addDrop(BlockInitializer.POLISHED_TILE_STAIRS);
     addDrop(BlockInitializer.POLISHED_TILE_WALL);
-    addDrop(BlockInitializer.QUARTZ_GILDED_DEEPSLATE);
-    addDrop(BlockInitializer.REDSTONE_GILDED_DEEPSLATE);
     addDrop(BlockInitializer.SANDED_COPPER_BLOCK);
     addDrop(BlockInitializer.SANDED_EXPOSED_COPPER_BLOCK);
     addDrop(BlockInitializer.SANDED_WEATHERED_COPPER_BLOCK);
@@ -87,6 +87,22 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     addDrop(BlockInitializer.WOVEN_WOOL_RED);
     addDrop(BlockInitializer.WOVEN_WOOL_WHITE);
     addDrop(BlockInitializer.WOVEN_WOOL_YELLOW);
+    addDrop(BlockInitializer.AMETHYST_GILDED_QUARTZ);
+    addDrop(BlockInitializer.COPPER_GILDED_QUARTZ);
+    addDrop(BlockInitializer.DIAMOND_GILDED_QUARTZ);
+    addDrop(BlockInitializer.EMERALD_GILDED_QUARTZ);
+    addDrop(BlockInitializer.GILDED_QUARTZ);
+    addDrop(BlockInitializer.IRON_GILDED_QUARTZ);
+    addDrop(BlockInitializer.LAPIS_GILDED_QUARTZ);
+    addDrop(BlockInitializer.NETHERITE_GILDED_QUARTZ);
+    addDrop(BlockInitializer.QUARTZ_GILDED_QUARTZ);
+    addDrop(BlockInitializer.REDSTONE_GILDED_QUARTZ);
+    addDrop(BlockInitializer.SINGLE_ROSE);
+    addPottedPlantDrops(BlockInitializer.POTTED_ROSE);
+    addDrop(BlockInitializer.PALE_ROSE);
+    addPottedPlantDrops(BlockInitializer.POTTED_PALE_ROSE);
+    addDrop(BlockInitializer.CYAN_ROSE);
+    addPottedPlantDrops(BlockInitializer.POTTED_CYAN_ROSE);
   }
 }
 

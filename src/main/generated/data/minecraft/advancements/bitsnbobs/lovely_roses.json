@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:bitsnbobs/root",
+  "criteria": {
+    "lovely_roses": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:single_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.lovely_roses.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "bitsnbobs:single_rose"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.lovely_roses.title"
+    }
+  },
+  "requirements": [
+    [
+      "lovely_roses"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

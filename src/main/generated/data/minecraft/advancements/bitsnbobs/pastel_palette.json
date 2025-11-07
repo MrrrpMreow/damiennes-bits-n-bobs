@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:bitsnbobs/lovely_roses",
+  "criteria": {
+    "pastel_palette": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:pale_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.pastel_palette.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "bitsnbobs:pale_rose"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.pastel_palette.title"
+    }
+  },
+  "requirements": [
+    [
+      "pastel_palette"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

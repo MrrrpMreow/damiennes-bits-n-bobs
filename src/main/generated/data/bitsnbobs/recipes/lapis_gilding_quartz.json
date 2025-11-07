@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:quartz_block"
+    },
+    "G": {
+      "item": "minecraft:lapis_lazuli"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DGD",
+    "DDD"
+  ],
+  "result": {
+    "count": 8,
+    "item": "bitsnbobs:lapis_gilded_quartz"
+  },
+  "show_notification": true
+}

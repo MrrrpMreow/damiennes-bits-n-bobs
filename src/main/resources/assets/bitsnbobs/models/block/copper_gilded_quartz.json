@@ -1,0 +1,11 @@
+{
+  "loader": "fusion:model",
+  "type": "connecting",
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bitsnbobs:block/copper_gilded_quartz"
+  },
+  "connections": {
+    "type": "is_same_block"
+  }
+}

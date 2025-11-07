@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:bitsnbobs/root",
+  "criteria": {
+    "held_quartz_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:quartz_gilded_quartz"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.quartz_quartz.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "bitsnbobs:quartz_gilded_quartz"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.quartz_quartz.title"
+    }
+  },
+  "requirements": [
+    [
+      "held_quartz_quartz"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

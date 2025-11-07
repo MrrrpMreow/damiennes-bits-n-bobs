@@ -1,6 +1,7 @@
 package net.gloobert.bitsnbobs.content;
 
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
@@ -75,6 +76,18 @@ public class BlockInitializer {
     public static final Block DIAMOND_GILDED_DEEPSLATE = register("diamond_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
     public static final Block IRON_GILDED_DEEPSLATE = register("iron_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
 
+
+    public static final Block GILDED_QUARTZ = register("gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block COPPER_GILDED_QUARTZ = register("copper_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block AMETHYST_GILDED_QUARTZ = register("amethyst_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block NETHERITE_GILDED_QUARTZ = register("netherite_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block EMERALD_GILDED_QUARTZ = register("emerald_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block REDSTONE_GILDED_QUARTZ = register("redstone_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block QUARTZ_GILDED_QUARTZ = register("quartz_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block LAPIS_GILDED_QUARTZ = register("lapis_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block DIAMOND_GILDED_QUARTZ = register("diamond_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+    public static final Block IRON_GILDED_QUARTZ = register("iron_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
+
     public static final Block CUT_AMETHYST_BLOCK = register("cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block POLISHED_CUT_AMETHYST_BLOCK = register("polished_cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block CUT_AMETHYST_TILES = register("cut_amethyst_tiles", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
@@ -94,6 +107,16 @@ public class BlockInitializer {
     public static final Block SANDED_OXIDIZED_COPPER_BLOCK = register("sanded_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
 
     public static final Block WARPED_WART_CROP = register("warped_wart_crop", new WarpedWartCropBlock(FabricBlockSettings.copy(Blocks.NETHER_WART)), false);
+    
+    public static final Block SINGLE_ROSE = register("single_rose", new FlowerBlock(StatusEffects.REGENERATION, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
+    public static final Block POTTED_ROSE = register("potted_rose", new FlowerPotBlock(SINGLE_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+
+    public static final Block PALE_ROSE = register("pale_rose", new FlowerBlock(StatusEffects.GLOWING, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
+    public static final Block POTTED_PALE_ROSE = register("potted_pale_rose", new FlowerPotBlock(PALE_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+
+    public static final Block CYAN_ROSE = register("cyan_rose", new FlowerBlock(StatusEffects.WATER_BREATHING, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
+    public static final Block POTTED_CYAN_ROSE = register("potted_cyan_rose", new FlowerPotBlock(CYAN_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);
         // Make it easy to distinctly separate Item and Block forms of something if preferred
@@ -122,6 +145,7 @@ public class BlockInitializer {
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_WHITE, 100);
         FuelRegistry.INSTANCE.add(WOVEN_WOOL_YELLOW, 100);
         // Carpets
+        // I think I made this before 67 as a joke was in its peak. I'm gonna fucking throw myself off a cliff bro
         FuelRegistry.INSTANCE.add(WOVEN_CARPET_BLACK, 67);
         FuelRegistry.INSTANCE.add(WOVEN_CARPET_BLUE, 67);
         FuelRegistry.INSTANCE.add(WOVEN_CARPET_BROWN, 67);

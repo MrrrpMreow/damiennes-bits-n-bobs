@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_bouquet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:rose_bouquet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_single_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:single_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsnbobs:red_rose_bouquet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_single_rose",
+      "has_rose_bouquet",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsnbobs:red_rose_bouquet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

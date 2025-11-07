@@ -1,0 +1,49 @@
+{
+  "parent": "minecraft:bitsnbobs/lovely_roses",
+  "criteria": {
+    "a_beautiful_bouquet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:cyan_rose_bouquet"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:pale_rose_bouquet"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:rose_bouquet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.a_beautiful_bouquet.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "bitsnbobs:rose_bouquet"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.a_beautiful_bouquet.title"
+    }
+  },
+  "requirements": [
+    [
+      "a_beautiful_bouquet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

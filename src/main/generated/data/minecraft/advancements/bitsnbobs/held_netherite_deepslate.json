@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:bitsnbobs/root",
+  "parent": "minecraft:bitsnbobs/held_quartz_quartz",
   "criteria": {
     "held_netherite_deepslate": {
       "conditions": {

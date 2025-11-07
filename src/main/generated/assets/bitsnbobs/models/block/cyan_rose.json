@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "bitsnbobs:block/cyan_rose"
+  }
+}

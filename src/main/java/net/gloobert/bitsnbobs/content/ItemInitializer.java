@@ -13,6 +13,9 @@ public class ItemInitializer {
     public static final Item ROSE_BOUQUET = register("rose_bouquet", new Item(new Item.Settings()));
     public static final Item PALE_ROSE_BOUQUET = register("pale_rose_bouquet", new Item(new Item.Settings()));
     public static final Item CYAN_ROSE_BOUQUET = register("cyan_rose_bouquet", new Item(new Item.Settings()));
+    public static final Item SUNSET_ROSE_BOUQUET = register("sunset_rose_bouquet", new Item(new Item.Settings()));
+    public static final Item DARKENED_ROSE_BOUQUET = register("darkened_rose_bouquet", new Item(new Item.Settings()));
+    public static final Item LAVENDER_ROSE_BOUQUET = register("lavender_rose_bouquet", new Item(new Item.Settings()));
 
 
     public static <T extends Item> T register(String path, T item) {

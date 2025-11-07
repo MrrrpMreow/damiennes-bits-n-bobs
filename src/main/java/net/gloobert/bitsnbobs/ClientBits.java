@@ -18,5 +18,11 @@ public class ClientBits implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.POTTED_PALE_ROSE);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.CYAN_ROSE);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.POTTED_CYAN_ROSE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.SUNSET_ROSE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.POTTED_SUNSET_ROSE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.DARKENED_ROSE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.POTTED_DARKENED_ROSE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.LAVENDER_ROSE);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), BlockInitializer.POTTED_LAVENDER_ROSE);
     }
 }

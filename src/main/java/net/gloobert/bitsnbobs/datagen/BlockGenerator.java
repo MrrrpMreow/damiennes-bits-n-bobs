@@ -36,6 +36,9 @@ public class BlockGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(BlockInitializer.SINGLE_ROSE, BlockInitializer.POTTED_ROSE, TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(BlockInitializer.PALE_ROSE, BlockInitializer.POTTED_PALE_ROSE, TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(BlockInitializer.CYAN_ROSE, BlockInitializer.POTTED_CYAN_ROSE, TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(BlockInitializer.SUNSET_ROSE, BlockInitializer.POTTED_SUNSET_ROSE, TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(BlockInitializer.DARKENED_ROSE, BlockInitializer.POTTED_DARKENED_ROSE, TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(BlockInitializer.LAVENDER_ROSE, BlockInitializer.POTTED_LAVENDER_ROSE, TintType.NOT_TINTED);
     }
 
     @Override
@@ -43,5 +46,8 @@ public class BlockGenerator extends FabricModelProvider {
         itemModelGenerator.register(ItemInitializer.ROSE_BOUQUET, Models.HANDHELD);
         itemModelGenerator.register(ItemInitializer.PALE_ROSE_BOUQUET, Models.HANDHELD);
         itemModelGenerator.register(ItemInitializer.CYAN_ROSE_BOUQUET, Models.HANDHELD);
+        itemModelGenerator.register(ItemInitializer.SUNSET_ROSE_BOUQUET, Models.HANDHELD);
+        itemModelGenerator.register(ItemInitializer.DARKENED_ROSE_BOUQUET, Models.HANDHELD);
+        itemModelGenerator.register(ItemInitializer.LAVENDER_ROSE_BOUQUET, Models.HANDHELD);
     }
 }

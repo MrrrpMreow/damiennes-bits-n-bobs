@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pale_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:pale_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sunset_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:sunset_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsnbobs:sunset_rose_dyeing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pale_rose",
+      "has_sunset_rose",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsnbobs:sunset_rose_dyeing"
+    ]
+  },
+  "sends_telemetry_event": false
+}

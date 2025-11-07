@@ -117,6 +117,15 @@ public class BlockInitializer {
     public static final Block CYAN_ROSE = register("cyan_rose", new FlowerBlock(StatusEffects.WATER_BREATHING, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
     public static final Block POTTED_CYAN_ROSE = register("potted_cyan_rose", new FlowerPotBlock(CYAN_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
 
+    public static final Block SUNSET_ROSE = register("sunset_rose", new FlowerBlock(StatusEffects.ABSORPTION, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
+    public static final Block POTTED_SUNSET_ROSE = register("potted_sunset_rose", new FlowerPotBlock(SUNSET_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+
+    public static final Block DARKENED_ROSE = register("darkened_rose", new FlowerBlock(StatusEffects.WITHER, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
+    public static final Block POTTED_DARKENED_ROSE = register("potted_darkened_rose", new FlowerPotBlock(DARKENED_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+
+    public static final Block LAVENDER_ROSE = register("lavender_rose", new FlowerBlock(StatusEffects.INVISIBILITY, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
+    public static final Block POTTED_LAVENDER_ROSE = register("potted_lavender_rose", new FlowerPotBlock(LAVENDER_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);
         // Make it easy to distinctly separate Item and Block forms of something if preferred

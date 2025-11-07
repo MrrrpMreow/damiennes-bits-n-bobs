@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_darkened_rose": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:darkened_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_darkened_rose_bouquet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:darkened_rose_bouquet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bitsnbobs:darkened_rose_bouquet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_darkened_rose",
+      "has_darkened_rose_bouquet",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bitsnbobs:darkened_rose_bouquet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

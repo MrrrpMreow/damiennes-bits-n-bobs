@@ -507,6 +507,21 @@ public class RecipeGenerator extends FabricRecipeProvider {
         .criterion(FabricRecipeProvider.hasItem(BlockInitializer.PALE_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.PALE_ROSE))
         .criterion(FabricRecipeProvider.hasItem(BlockInitializer.CYAN_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.CYAN_ROSE))
         .offerTo(exporter, Identifier.of("bitsnbobs", "cyan_rose_dyeing"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlockInitializer.SUNSET_ROSE)
+        .input(BlockInitializer.PALE_ROSE).input(Items.MAGENTA_DYE).input(Items.YELLOW_DYE)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.PALE_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.PALE_ROSE))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.SUNSET_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.SUNSET_ROSE))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sunset_rose_dyeing"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlockInitializer.DARKENED_ROSE)
+        .input(BlockInitializer.PALE_ROSE).input(Items.BLACK_DYE)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.PALE_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.PALE_ROSE))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.DARKENED_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.DARKENED_ROSE))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "darkened_rose_dyeing"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, BlockInitializer.LAVENDER_ROSE)
+        .input(BlockInitializer.PALE_ROSE).input(Items.PURPLE_DYE).input(Items.LIGHT_GRAY_DYE)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.PALE_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.PALE_ROSE))
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.LAVENDER_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.LAVENDER_ROSE))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "lavender_rose_dyeing"));
         // Bouquets
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInitializer.ROSE_BOUQUET, 1)
         .pattern("RRR") 
@@ -535,5 +550,32 @@ public class RecipeGenerator extends FabricRecipeProvider {
         .criterion(FabricRecipeProvider.hasItem(BlockInitializer.PALE_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.PALE_ROSE))
         .criterion(FabricRecipeProvider.hasItem(ItemInitializer.PALE_ROSE_BOUQUET), FabricRecipeProvider.conditionsFromItem(ItemInitializer.PALE_ROSE_BOUQUET))
         .offerTo(exporter, Identifier.of("bitsnbobs", "pale_rose_bouquet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInitializer.SUNSET_ROSE_BOUQUET, 1)
+        .pattern("RRR")
+        .pattern("RSR")
+        .pattern("RRR")
+        .input('R', BlockInitializer.SUNSET_ROSE)
+        .input('S', Items.STRING)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.SUNSET_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.SUNSET_ROSE))
+        .criterion(FabricRecipeProvider.hasItem(ItemInitializer.SUNSET_ROSE_BOUQUET), FabricRecipeProvider.conditionsFromItem(ItemInitializer.SUNSET_ROSE_BOUQUET))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "sunset_rose_bouquet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInitializer.DARKENED_ROSE_BOUQUET, 1)
+        .pattern("RRR")
+        .pattern("RSR")
+        .pattern("RRR")
+        .input('R', BlockInitializer.DARKENED_ROSE)
+        .input('S', Items.STRING)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.DARKENED_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.DARKENED_ROSE))
+        .criterion(FabricRecipeProvider.hasItem(ItemInitializer.DARKENED_ROSE_BOUQUET), FabricRecipeProvider.conditionsFromItem(ItemInitializer.DARKENED_ROSE_BOUQUET))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "darkened_rose_bouquet"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ItemInitializer.LAVENDER_ROSE_BOUQUET, 1)
+        .pattern("RRR")
+        .pattern("RSR")
+        .pattern("RRR")
+        .input('R', BlockInitializer.LAVENDER_ROSE)
+        .input('S', Items.STRING)
+        .criterion(FabricRecipeProvider.hasItem(BlockInitializer.LAVENDER_ROSE), FabricRecipeProvider.conditionsFromItem(BlockInitializer.LAVENDER_ROSE))
+        .criterion(FabricRecipeProvider.hasItem(ItemInitializer.LAVENDER_ROSE_BOUQUET), FabricRecipeProvider.conditionsFromItem(ItemInitializer.LAVENDER_ROSE_BOUQUET))
+        .offerTo(exporter, Identifier.of("bitsnbobs", "lavender_rose_bouquet"));
     }
 }

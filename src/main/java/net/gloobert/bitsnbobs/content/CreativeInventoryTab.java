@@ -111,6 +111,12 @@ public class CreativeInventoryTab {
             entries.add(ItemInitializer.PALE_ROSE_BOUQUET);
             entries.add(BlockInitializer.CYAN_ROSE);
             entries.add(ItemInitializer.CYAN_ROSE_BOUQUET);
+            entries.add(BlockInitializer.SUNSET_ROSE);
+            entries.add(ItemInitializer.SUNSET_ROSE_BOUQUET);
+            entries.add(BlockInitializer.DARKENED_ROSE);
+            entries.add(ItemInitializer.DARKENED_ROSE_BOUQUET);
+            entries.add(BlockInitializer.LAVENDER_ROSE);
+            entries.add(ItemInitializer.LAVENDER_ROSE_BOUQUET);
         })
         .build());
     public static void initialize() {

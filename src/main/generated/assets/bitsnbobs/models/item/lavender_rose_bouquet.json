@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "bitsnbobs:item/lavender_rose_bouquet"
+  }
+}

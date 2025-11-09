@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "T": {
+      "item": "bitsnbobs:polished_mud_slab"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "item": "bitsnbobs:mud_pillar"
+  },
+  "show_notification": true
+}

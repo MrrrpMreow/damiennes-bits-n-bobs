@@ -28,7 +28,7 @@ public class AdvancementGenerator extends FabricAdvancementProvider {
                             new Identifier("textures/gui/advancements/backgrounds/adventure.png"), // Background image used
                             AdvancementFrame.TASK, // Options: TASK, CHALLENGE, GOAL
                             true, // Show toast top right
-                            true, // Announce to chat
+                            false, // Announce to chat
                             false // Hidden in the advancement tab
                     )
                     // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
@@ -116,7 +116,26 @@ public class AdvancementGenerator extends FabricAdvancementProvider {
                             false // Hidden in the advancement tab
                     )
                     // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
-                    .criterion("a_beautiful_bouquet", InventoryChangedCriterion.Conditions.items(ItemInitializer.CYAN_ROSE_BOUQUET, ItemInitializer.PALE_ROSE_BOUQUET, ItemInitializer.ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet1", InventoryChangedCriterion.Conditions.items(ItemInitializer.ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet2", InventoryChangedCriterion.Conditions.items(ItemInitializer.PALE_ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet3", InventoryChangedCriterion.Conditions.items(ItemInitializer.CYAN_ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet4", InventoryChangedCriterion.Conditions.items(ItemInitializer.SUNSET_ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet5", InventoryChangedCriterion.Conditions.items(ItemInitializer.DARKENED_ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet6", InventoryChangedCriterion.Conditions.items(ItemInitializer.LAVENDER_ROSE_BOUQUET))
                     .build(consumer, "bitsnbobs" + "/a_beautiful_bouquet");
+            Advancement SpectrumOfColor = Advancement.Builder.create().parent(pastelPalette)
+                    .display(
+                            BlockInitializer.SUNSET_ROSE, // The display icon
+                            Text.translatable("advancements.bitsnbobs.spectrum_of_color.title"), // The title
+                            Text.translatable("advancements.bitsnbobs.spectrum_of_color.description"), // The description
+                            new Identifier("textures/gui/advancements/backgrounds/adventure.png"), // Background image used
+                            AdvancementFrame.GOAL, // Options: TASK, CHALLENGE, GOAL
+                            true, // Show toast top right
+                            true, // Announce to chat
+                            false // Hidden in the advancement tab
+                    )
+                    // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
+                    .criterion("spectrum_of_color", InventoryChangedCriterion.Conditions.items(BlockInitializer.SINGLE_ROSE, BlockInitializer.CYAN_ROSE, BlockInitializer.PALE_ROSE, BlockInitializer.SUNSET_ROSE, BlockInitializer.DARKENED_ROSE, BlockInitializer.LAVENDER_ROSE))
+                    .build(consumer, "bitsnbobs" + "/spectrum_of_color");
         }
     }

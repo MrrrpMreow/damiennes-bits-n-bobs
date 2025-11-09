@@ -1,22 +1,72 @@
 {
   "parent": "minecraft:bitsnbobs/lovely_roses",
   "criteria": {
-    "a_beautiful_bouquet": {
+    "a_beautiful_bouquet1": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:rose_bouquet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "a_beautiful_bouquet2": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:pale_rose_bouquet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "a_beautiful_bouquet3": {
       "conditions": {
         "items": [
           {
             "items": [
               "bitsnbobs:cyan_rose_bouquet"
             ]
-          },
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "a_beautiful_bouquet4": {
+      "conditions": {
+        "items": [
           {
             "items": [
-              "bitsnbobs:pale_rose_bouquet"
+              "bitsnbobs:sunset_rose_bouquet"
             ]
-          },
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "a_beautiful_bouquet5": {
+      "conditions": {
+        "items": [
           {
             "items": [
-              "bitsnbobs:rose_bouquet"
+              "bitsnbobs:darkened_rose_bouquet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "a_beautiful_bouquet6": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:lavender_rose_bouquet"
             ]
           }
         ]
@@ -42,7 +92,22 @@
   },
   "requirements": [
     [
-      "a_beautiful_bouquet"
+      "a_beautiful_bouquet1"
+    ],
+    [
+      "a_beautiful_bouquet2"
+    ],
+    [
+      "a_beautiful_bouquet3"
+    ],
+    [
+      "a_beautiful_bouquet4"
+    ],
+    [
+      "a_beautiful_bouquet5"
+    ],
+    [
+      "a_beautiful_bouquet6"
     ]
   ],
   "sends_telemetry_event": true

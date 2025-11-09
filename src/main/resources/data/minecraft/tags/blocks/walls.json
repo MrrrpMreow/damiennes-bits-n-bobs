@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "bitsnbobs:blue_nether_brick_wall",
-    "bitsnbobs:polished_tile_wall"
+    "bitsnbobs:polished_tile_wall",
+    "bitsnbobs:polished_mud_wall",
+    "bitsnbobs:mossy_mud_brick_wall"
   ]
 }

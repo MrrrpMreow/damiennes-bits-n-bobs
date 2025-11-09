@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "T": {
+      "item": "minecraft:mud_brick_slab"
+    }
+  },
+  "pattern": [
+    "T",
+    "T"
+  ],
+  "result": {
+    "item": "bitsnbobs:chiseled_mud_bricks"
+  },
+  "show_notification": true
+}

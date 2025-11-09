@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "T": {
+      "item": "bitsnbobs:polished_mud"
+    }
+  },
+  "pattern": [
+    "TTT",
+    "TTT"
+  ],
+  "result": {
+    "count": 6,
+    "item": "bitsnbobs:polished_mud_wall"
+  },
+  "show_notification": true
+}

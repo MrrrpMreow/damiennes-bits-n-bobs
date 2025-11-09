@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "bitsnbobs:block/mossy_mud_bricks",
+    "side": "bitsnbobs:block/mossy_mud_bricks",
+    "top": "bitsnbobs:block/mossy_mud_bricks"
+  }
+}

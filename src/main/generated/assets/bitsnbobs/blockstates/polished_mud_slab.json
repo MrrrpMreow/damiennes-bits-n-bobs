@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bitsnbobs:block/polished_mud_slab"
+    },
+    "type=double": {
+      "model": "bitsnbobs:block/polished_mud"
+    },
+    "type=top": {
+      "model": "bitsnbobs:block/polished_mud_slab_top"
+    }
+  }
+}

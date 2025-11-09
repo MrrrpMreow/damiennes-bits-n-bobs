@@ -1,0 +1,64 @@
+{
+  "parent": "minecraft:bitsnbobs/pastel_palette",
+  "criteria": {
+    "spectrum_of_color": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bitsnbobs:single_rose"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:cyan_rose"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:pale_rose"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:sunset_rose"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:darkened_rose"
+            ]
+          },
+          {
+            "items": [
+              "bitsnbobs:lavender_rose"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.bitsnbobs.spectrum_of_color.description"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "bitsnbobs:sunset_rose"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.bitsnbobs.spectrum_of_color.title"
+    }
+  },
+  "requirements": [
+    [
+      "spectrum_of_color"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -103,6 +103,12 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     addPottedPlantDrops(BlockInitializer.POTTED_PALE_ROSE);
     addDrop(BlockInitializer.CYAN_ROSE);
     addPottedPlantDrops(BlockInitializer.POTTED_CYAN_ROSE);
+    addDrop(BlockInitializer.SUNSET_ROSE);
+    addPottedPlantDrops(BlockInitializer.POTTED_SUNSET_ROSE);
+    addDrop(BlockInitializer.DARKENED_ROSE);
+    addPottedPlantDrops(BlockInitializer.POTTED_DARKENED_ROSE);
+    addDrop(BlockInitializer.LAVENDER_ROSE);
+    addPottedPlantDrops(BlockInitializer.POTTED_LAVENDER_ROSE);
   }
 }
 

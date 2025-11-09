@@ -64,7 +64,7 @@ public class BlockInitializer {
     public static final Block WOVEN_CARPET_PURPLE = register("woven_carpet_purple", new CarpetBlock(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
     public static final Block WOVEN_CARPET_RED = register("woven_carpet_red", new CarpetBlock(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
     public static final Block WOVEN_CARPET_YELLOW = register("woven_carpet_yellow", new CarpetBlock(Block.Settings.copy(WOVEN_WOOL_WHITE)), true);
-    
+    // Gilded Deepslate
     public static final Block GILDED_DEEPSLATE = register("gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
     public static final Block COPPER_GILDED_DEEPSLATE = register("copper_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
     public static final Block AMETHYST_GILDED_DEEPSLATE = register("amethyst_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
@@ -75,8 +75,7 @@ public class BlockInitializer {
     public static final Block LAPIS_GILDED_DEEPSLATE = register("lapis_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
     public static final Block DIAMOND_GILDED_DEEPSLATE = register("diamond_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
     public static final Block IRON_GILDED_DEEPSLATE = register("iron_gilded_deepslate", new Block(FabricBlockSettings.copy(Blocks.POLISHED_DEEPSLATE)), true);
-
-
+    // Gilded Quartz
     public static final Block GILDED_QUARTZ = register("gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
     public static final Block COPPER_GILDED_QUARTZ = register("copper_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
     public static final Block AMETHYST_GILDED_QUARTZ = register("amethyst_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
@@ -87,7 +86,7 @@ public class BlockInitializer {
     public static final Block LAPIS_GILDED_QUARTZ = register("lapis_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
     public static final Block DIAMOND_GILDED_QUARTZ = register("diamond_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
     public static final Block IRON_GILDED_QUARTZ = register("iron_gilded_quartz", new Block(FabricBlockSettings.copy(Blocks.QUARTZ_BLOCK)), true);
-
+    // Amethyst Palette
     public static final Block CUT_AMETHYST_BLOCK = register("cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block POLISHED_CUT_AMETHYST_BLOCK = register("polished_cut_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block CUT_AMETHYST_TILES = register("cut_amethyst_tiles", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
@@ -95,7 +94,7 @@ public class BlockInitializer {
     public static final Block POLISHED_AMETHYST_BRICKS = register("polished_amethyst_bricks", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block AMETHYST_PILLAR = register("amethyst_pillar", new PillarBlock(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
     public static final Block TRIMMED_AMETHYST = register("trimmed_amethyst", new Block(FabricBlockSettings.copy(Blocks.AMETHYST_BLOCK)), true);
-
+    // Sanded Copper
     public static final Block WAXED_SANDED_COPPER_BLOCK = register("waxed_sanded_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
     public static final Block WAXED_SANDED_EXPOSED_COPPER_BLOCK = register("waxed_sanded_exposed_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
     public static final Block WAXED_SANDED_WEATHERED_COPPER_BLOCK = register("waxed_sanded_weathered_copper", new Block(FabricBlockSettings.copy(Blocks.WAXED_COPPER_BLOCK)), true);
@@ -105,9 +104,9 @@ public class BlockInitializer {
     public static final Block SANDED_EXPOSED_COPPER_BLOCK = register("sanded_exposed_copper", new OxidizableBlock(Oxidizable.OxidationLevel.EXPOSED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
     public static final Block SANDED_WEATHERED_COPPER_BLOCK = register("sanded_weathered_copper", new OxidizableBlock(Oxidizable.OxidationLevel.WEATHERED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
     public static final Block SANDED_OXIDIZED_COPPER_BLOCK = register("sanded_oxidized_copper", new OxidizableBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.copy(Blocks.COPPER_BLOCK)), true);
-
+    //Warped Wart Crop
     public static final Block WARPED_WART_CROP = register("warped_wart_crop", new WarpedWartCropBlock(FabricBlockSettings.copy(Blocks.NETHER_WART)), false);
-    
+    //Roses
     public static final Block SINGLE_ROSE = register("single_rose", new FlowerBlock(StatusEffects.REGENERATION, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
     public static final Block POTTED_ROSE = register("potted_rose", new FlowerPotBlock(SINGLE_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
 
@@ -125,6 +124,19 @@ public class BlockInitializer {
 
     public static final Block LAVENDER_ROSE = register("lavender_rose", new FlowerBlock(StatusEffects.INVISIBILITY, 10, FabricBlockSettings.copy(Blocks.POPPY)), true);
     public static final Block POTTED_LAVENDER_ROSE = register("potted_lavender_rose", new FlowerPotBlock(LAVENDER_ROSE, FabricBlockSettings.copy(Blocks.POTTED_POPPY)), false);
+    // Mud Palette
+    public static final Block MUD_PILLAR = register("mud_pillar", new PillarBlock(FabricBlockSettings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block CHISELED_MUD_BRICKS = register("chiseled_mud_bricks", new Block(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
+    
+    public static final Block MOSSY_MUD_BRICKS = register("mossy_mud_bricks", new Block(FabricBlockSettings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block MOSSY_MUD_BRICK_SLAB = register("mossy_mud_brick_slab", new SlabBlock(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block MOSSY_MUD_BRICK_STAIRS = register("mossy_mud_brick_stairs", new StairsBlock(Blocks.MUD_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block MOSSY_MUD_BRICK_WALL = register("mossy_mud_brick_wall", new WallBlock(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
+
+    public static final Block POLISHED_MUD = register("polished_mud", new Block(FabricBlockSettings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block POLISHED_MUD_SLAB = register("polished_mud_slab", new SlabBlock(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block POLISHED_MUD_STAIRS = register("polished_mud_stairs", new StairsBlock(Blocks.MUD_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.MUD_BRICKS)), true);
+    public static final Block POLISHED_MUD_WALL = register("polished_mud_wall", new WallBlock(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
 
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);

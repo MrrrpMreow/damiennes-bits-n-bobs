@@ -117,6 +117,17 @@ public class CreativeInventoryTab {
             entries.add(ItemInitializer.DARKENED_ROSE_BOUQUET);
             entries.add(BlockInitializer.LAVENDER_ROSE);
             entries.add(ItemInitializer.LAVENDER_ROSE_BOUQUET);
+            //Mud Blocks
+            entries.add(BlockInitializer.MUD_PILLAR);
+            entries.add(BlockInitializer.CHISELED_MUD_BRICKS);
+            entries.add(BlockInitializer.MOSSY_MUD_BRICKS);
+            entries.add(BlockInitializer.MOSSY_MUD_BRICK_SLAB);
+            entries.add(BlockInitializer.MOSSY_MUD_BRICK_STAIRS);
+            entries.add(BlockInitializer.MOSSY_MUD_BRICK_WALL);
+            entries.add(BlockInitializer.POLISHED_MUD);
+            entries.add(BlockInitializer.POLISHED_MUD_SLAB);
+            entries.add(BlockInitializer.POLISHED_MUD_STAIRS);
+            entries.add(BlockInitializer.POLISHED_MUD_WALL);
         })
         .build());
     public static void initialize() {

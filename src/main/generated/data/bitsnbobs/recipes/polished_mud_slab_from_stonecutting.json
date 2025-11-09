@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "bitsnbobs:polished_mud"
+  },
+  "result": "bitsnbobs:polished_mud_slab"
+}

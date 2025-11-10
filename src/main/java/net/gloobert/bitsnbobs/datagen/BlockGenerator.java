@@ -94,6 +94,24 @@ public class BlockGenerator extends FabricModelProvider {
         generateStairsModels(blockStateModelGenerator, polishedMudTextureMap, BlockInitializer.POLISHED_MUD_STAIRS);
         generateSlabModels(blockStateModelGenerator, polishedMudTextureMap, BlockInitializer.POLISHED_MUD_SLAB, Identifier.of("bitsnbobs", "block/polished_mud"));
         generateWallModels(blockStateModelGenerator, polishedMudTextureMap, BlockInitializer.POLISHED_MUD_WALL);
+
+
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_BLACK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_BLUE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_BROWN);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_CYAN);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_GRAY);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_GREEN);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_LIGHT_BLUE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_LIGHT_GRAY);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_LIME);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_MAGENTA);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_ORANGE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_PINK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_PURPLE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_RED);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_WHITE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlockInitializer.CLAY_YELLOW);
     }
 
     @Override

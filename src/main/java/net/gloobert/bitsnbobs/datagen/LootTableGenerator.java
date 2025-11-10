@@ -109,6 +109,32 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     addPottedPlantDrops(BlockInitializer.POTTED_DARKENED_ROSE);
     addDrop(BlockInitializer.LAVENDER_ROSE);
     addPottedPlantDrops(BlockInitializer.POTTED_LAVENDER_ROSE);
+    addDrop(BlockInitializer.CHISELED_MUD_BRICKS);
+    addDrop(BlockInitializer.MUD_PILLAR);
+    addDrop(BlockInitializer.POLISHED_MUD);
+    addDrop(BlockInitializer.POLISHED_MUD_SLAB, slabDrops(BlockInitializer.POLISHED_MUD_SLAB));
+    addDrop(BlockInitializer.POLISHED_MUD_STAIRS);
+    addDrop(BlockInitializer.POLISHED_MUD_WALL);
+    addDrop(BlockInitializer.MOSSY_MUD_BRICKS);
+    addDrop(BlockInitializer.MOSSY_MUD_BRICK_SLAB, slabDrops(BlockInitializer.MOSSY_MUD_BRICK_SLAB));
+    addDrop(BlockInitializer.MOSSY_MUD_BRICK_STAIRS);
+    addDrop(BlockInitializer.MOSSY_MUD_BRICK_WALL);
+    addDrop(BlockInitializer.CLAY_BLACK);
+    addDrop(BlockInitializer.CLAY_BLUE);
+    addDrop(BlockInitializer.CLAY_BROWN);
+    addDrop(BlockInitializer.CLAY_CYAN);
+    addDrop(BlockInitializer.CLAY_GRAY);
+    addDrop(BlockInitializer.CLAY_GREEN);
+    addDrop(BlockInitializer.CLAY_LIGHT_BLUE);
+    addDrop(BlockInitializer.CLAY_LIGHT_GRAY);
+    addDrop(BlockInitializer.CLAY_LIME);
+    addDrop(BlockInitializer.CLAY_MAGENTA);
+    addDrop(BlockInitializer.CLAY_ORANGE);
+    addDrop(BlockInitializer.CLAY_PINK);
+    addDrop(BlockInitializer.CLAY_PURPLE);
+    addDrop(BlockInitializer.CLAY_RED);
+    addDrop(BlockInitializer.CLAY_WHITE);
+    addDrop(BlockInitializer.CLAY_YELLOW);
   }
 }
 

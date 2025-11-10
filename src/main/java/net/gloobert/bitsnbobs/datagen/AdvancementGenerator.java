@@ -116,12 +116,7 @@ public class AdvancementGenerator extends FabricAdvancementProvider {
                             false // Hidden in the advancement tab
                     )
                     // The first string used in criterion is the name referenced by other advancements when they want to have 'requirements'
-                    .criterion("a_beautiful_bouquet1", InventoryChangedCriterion.Conditions.items(ItemInitializer.ROSE_BOUQUET))
-                    .criterion("a_beautiful_bouquet2", InventoryChangedCriterion.Conditions.items(ItemInitializer.PALE_ROSE_BOUQUET))
-                    .criterion("a_beautiful_bouquet3", InventoryChangedCriterion.Conditions.items(ItemInitializer.CYAN_ROSE_BOUQUET))
-                    .criterion("a_beautiful_bouquet4", InventoryChangedCriterion.Conditions.items(ItemInitializer.SUNSET_ROSE_BOUQUET))
-                    .criterion("a_beautiful_bouquet5", InventoryChangedCriterion.Conditions.items(ItemInitializer.DARKENED_ROSE_BOUQUET))
-                    .criterion("a_beautiful_bouquet6", InventoryChangedCriterion.Conditions.items(ItemInitializer.LAVENDER_ROSE_BOUQUET))
+                    .criterion("a_beautiful_bouquet", InventoryChangedCriterion.Conditions.items(ItemInitializer.ROSE_BOUQUET))
                     .build(consumer, "bitsnbobs" + "/a_beautiful_bouquet");
             Advancement SpectrumOfColor = Advancement.Builder.create().parent(pastelPalette)
                     .display(

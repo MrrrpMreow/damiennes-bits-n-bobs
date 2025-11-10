@@ -118,5 +118,21 @@
     "block.bitsnbobs.polished_mud":"Polished Mud",
     "block.bitsnbobs.polished_mud_stairs":"Polished Mud Stairs",
     "block.bitsnbobs.polished_mud_slab":"Polished Mud Slab",
-    "block.bitsnbobs.polished_mud_wall":"Polished Mud Wall"
+    "block.bitsnbobs.polished_mud_wall":"Polished Mud Wall",
+    "block.bitsnbobs.clay_white":"White Stained Clay",
+    "block.bitsnbobs.clay_light_gray":"Light Gray Stained Clay",
+    "block.bitsnbobs.clay_gray":"Gray Stained Clay",
+    "block.bitsnbobs.clay_black":"Black Stained Clay",
+    "block.bitsnbobs.clay_brown":"Brown Stained Clay",
+    "block.bitsnbobs.clay_red":"Red Stained Clay",
+    "block.bitsnbobs.clay_orange":"Orange Stained Clay",
+    "block.bitsnbobs.clay_yellow":"Yellow Stained Clay",
+    "block.bitsnbobs.clay_lime":"Lime Stained Clay",
+    "block.bitsnbobs.clay_green":"Green Stained Clay",
+    "block.bitsnbobs.clay_cyan":"Cyan Stained Clay",
+    "block.bitsnbobs.clay_light_blue":"Light Blue Stained Clay",
+    "block.bitsnbobs.clay_blue":"Blue Stained Clay",
+    "block.bitsnbobs.clay_purple":"Purple Stained Clay",
+    "block.bitsnbobs.clay_magenta":"Magenta Stained Clay",
+    "block.bitsnbobs.clay_pink":"Pink Stained Clay"
 }

@@ -137,7 +137,24 @@ public class BlockInitializer {
     public static final Block POLISHED_MUD_SLAB = register("polished_mud_slab", new SlabBlock(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
     public static final Block POLISHED_MUD_STAIRS = register("polished_mud_stairs", new StairsBlock(Blocks.MUD_BRICKS.getDefaultState(), Block.Settings.copy(Blocks.MUD_BRICKS)), true);
     public static final Block POLISHED_MUD_WALL = register("polished_mud_wall", new WallBlock(Block.Settings.copy(Blocks.MUD_BRICKS)), true);
-
+    // Dyed Clay
+    public static final Block CLAY_WHITE = register("clay_white", new Block(FabricBlockSettings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_BLACK = register("clay_black", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_BLUE = register("clay_blue", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_BROWN = register("clay_brown", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_CYAN = register("clay_cyan", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_GRAY = register("clay_gray", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_GREEN = register("clay_green", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_LIGHT_BLUE = register("clay_light_blue", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_LIGHT_GRAY = register("clay_light_gray", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_LIME = register("clay_lime", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_MAGENTA = register("clay_magenta", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_ORANGE = register("clay_orange", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_PINK = register("clay_pink", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_PURPLE = register("clay_purple", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_RED = register("clay_red", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    public static final Block CLAY_YELLOW = register("clay_yellow", new Block(Block.Settings.copy(Blocks.CLAY)), true);
+    
     private static <T extends Block> T register(String path, T block, boolean registerItem) {
         Registry.register(Registries.BLOCK, Identifier.of("bitsnbobs", path), block);
         // Make it easy to distinctly separate Item and Block forms of something if preferred

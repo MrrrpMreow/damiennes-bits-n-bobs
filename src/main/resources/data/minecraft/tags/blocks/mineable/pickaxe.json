@@ -35,6 +35,25 @@
     "bitsnbobs:sanded_weathered_copper",
     "bitsnbobs:waxed_sanded_weathered_copper",
     "bitsnbobs:sanded_oxidized_copper",
-    "bitsnbobs:waxed_sanded_oxidized_copper"
+    "bitsnbobs:waxed_sanded_oxidized_copper",
+    "bitsnbobs:copper_gilded_quartz",
+    "bitsnbobs:amethyst_gilded_quartz",
+    "bitsnbobs:netherite_gilded_quartz",
+    "bitsnbobs:quartz_gilded_quartz",
+    "bitsnbobs:emerald_gilded_quartz",
+    "bitsnbobs:lapis_gilded_quartz",
+    "bitsnbobs:diamond_gilded_quartz",
+    "bitsnbobs:iron_gilded_quartz",
+    "bitsnbobs:redstone_gilded_quartz",
+    "bitsnbobs:mud_pillar",
+    "bitsnbobs:chiseled_mud_bricks",
+    "bitsnbobs:mossy_mud_bricks",
+    "bitsnbobs:mossy_mud_brick_slab",
+    "bitsnbobs:mossy_mud_brick_stairs",
+    "bitsnbobs:mossy_mud_brick_wall",
+    "bitsnbobs:polished_mud",
+    "bitsnbobs:polished_mud_slab",
+    "bitsnbobs:polished_mud_stairs",
+    "bitsnbobs:polished_mud_wall"
   ]
 }

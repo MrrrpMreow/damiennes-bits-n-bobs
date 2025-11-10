@@ -128,6 +128,23 @@ public class CreativeInventoryTab {
             entries.add(BlockInitializer.POLISHED_MUD_SLAB);
             entries.add(BlockInitializer.POLISHED_MUD_STAIRS);
             entries.add(BlockInitializer.POLISHED_MUD_WALL);
+            // Clay
+            entries.add(BlockInitializer.CLAY_WHITE);
+            entries.add(BlockInitializer.CLAY_LIGHT_GRAY);
+            entries.add(BlockInitializer.CLAY_GRAY);
+            entries.add(BlockInitializer.CLAY_BLACK);
+            entries.add(BlockInitializer.CLAY_BROWN);
+            entries.add(BlockInitializer.CLAY_RED);
+            entries.add(BlockInitializer.CLAY_ORANGE);
+            entries.add(BlockInitializer.CLAY_YELLOW);
+            entries.add(BlockInitializer.CLAY_LIME);
+            entries.add(BlockInitializer.CLAY_GREEN);
+            entries.add(BlockInitializer.CLAY_CYAN);
+            entries.add(BlockInitializer.CLAY_LIGHT_BLUE);
+            entries.add(BlockInitializer.CLAY_BLUE);
+            entries.add(BlockInitializer.CLAY_PURPLE);
+            entries.add(BlockInitializer.CLAY_MAGENTA);
+            entries.add(BlockInitializer.CLAY_PINK);
         })
         .build());
     public static void initialize() {

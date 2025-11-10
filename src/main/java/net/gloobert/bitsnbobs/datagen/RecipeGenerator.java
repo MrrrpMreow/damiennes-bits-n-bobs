@@ -568,5 +568,22 @@ public class RecipeGenerator extends FabricRecipeProvider {
         // Mud Etc. Blocks
         generateChiselingRecipes(RecipeCategory.BUILDING_BLOCKS, Items.MUD_BRICKS, Items.MUD_BRICK_SLAB, BlockInitializer.CHISELED_MUD_BRICKS, exporter);
         generateChiselingRecipes(RecipeCategory.BUILDING_BLOCKS, BlockInitializer.POLISHED_MUD, BlockInitializer.POLISHED_MUD_SLAB, BlockInitializer.MUD_PILLAR, exporter);
+        // Clay dyeing recipes
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.WHITE_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_WHITE, exporter, "dye_white_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.LIGHT_GRAY_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_LIGHT_GRAY, exporter, "dye_light_gray_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.GRAY_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_GRAY, exporter, "dye_gray_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.BLACK_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_BLACK, exporter, "dye_black_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.BROWN_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_BROWN, exporter, "dye_brown_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.RED_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_RED, exporter, "dye_red_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.ORANGE_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_ORANGE, exporter, "dye_orange_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.YELLOW_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_YELLOW, exporter, "dye_yellow_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.LIME_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_LIME, exporter, "dye_lime_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.GREEN_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_GREEN, exporter, "dye_green_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.CYAN_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_CYAN, exporter, "dye_cyan_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.LIGHT_BLUE_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_LIGHT_BLUE, exporter, "dye_light_blue_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.BLUE_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_BLUE, exporter, "dye_blue_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.PURPLE_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_PURPLE, exporter, "dye_purple_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.MAGENTA_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_MAGENTA, exporter, "dye_magenta_clay");
+        generateDyeingRecipe(RecipeCategory.BUILDING_BLOCKS, Items.PINK_DYE, TagGenerator.CLAY_BLOCKS, BlockInitializer.CLAY_PINK, exporter, "dye_pink_clay");
     }
 }

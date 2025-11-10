@@ -18,6 +18,7 @@ public class TagGenerator extends FabricTagProvider<Item> {
    public static final TagKey<Item> WOVEN_WOOL = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "woven_wool"));
    public static final TagKey<Item> WOVEN_CARPET = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "woven_carpet"));
    public static final TagKey<Item> AMETHYST_BLOCKS = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "amethyst_blocks"));
+   public static final TagKey<Item> CLAY_BLOCKS = TagKey.of(RegistryKeys.ITEM, Identifier.of("bitsnbobs", "clay_blocks"));
 
    public TagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, RegistryKeys.ITEM, registriesFuture);
@@ -68,5 +69,22 @@ public class TagGenerator extends FabricTagProvider<Item> {
             .add(BlockInitializer.WOVEN_CARPET_RED.asItem())
             .add(BlockInitializer.WOVEN_CARPET_WHITE.asItem())
             .add(BlockInitializer.WOVEN_CARPET_YELLOW.asItem());
+        getOrCreateTagBuilder(CLAY_BLOCKS)
+            .add(BlockInitializer.CLAY_BLACK.asItem())
+            .add(BlockInitializer.CLAY_BLUE.asItem())
+            .add(BlockInitializer.CLAY_BROWN.asItem())
+            .add(BlockInitializer.CLAY_CYAN.asItem())
+            .add(BlockInitializer.CLAY_GRAY.asItem())
+            .add(BlockInitializer.CLAY_GREEN.asItem())
+            .add(BlockInitializer.CLAY_LIGHT_BLUE.asItem())
+            .add(BlockInitializer.CLAY_LIGHT_GRAY.asItem())
+            .add(BlockInitializer.CLAY_LIME.asItem())
+            .add(BlockInitializer.CLAY_MAGENTA.asItem())
+            .add(BlockInitializer.CLAY_ORANGE.asItem())
+            .add(BlockInitializer.CLAY_PINK.asItem())
+            .add(BlockInitializer.CLAY_PURPLE.asItem())
+            .add(BlockInitializer.CLAY_RED.asItem())
+            .add(BlockInitializer.CLAY_WHITE.asItem())
+            .add(BlockInitializer.CLAY_YELLOW.asItem());
    }
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:clay",
     "bitsnbobs:clay_black",
     "bitsnbobs:clay_blue",
     "bitsnbobs:clay_brown",

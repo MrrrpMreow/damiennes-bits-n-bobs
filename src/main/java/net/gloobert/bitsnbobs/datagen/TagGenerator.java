@@ -70,6 +70,7 @@ public class TagGenerator extends FabricTagProvider<Item> {
             .add(BlockInitializer.WOVEN_CARPET_WHITE.asItem())
             .add(BlockInitializer.WOVEN_CARPET_YELLOW.asItem());
         getOrCreateTagBuilder(CLAY_BLOCKS)
+            .add(Items.CLAY)
             .add(BlockInitializer.CLAY_BLACK.asItem())
             .add(BlockInitializer.CLAY_BLUE.asItem())
             .add(BlockInitializer.CLAY_BROWN.asItem())
